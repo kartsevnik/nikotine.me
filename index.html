@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikolay — Developer, Creator &amp; Explorer</title>
+  <meta name="description"
+    content="Personal digital card of Nikolay — developer, creator and explorer. Contacts, projects and creative work." />
+  <meta name="theme-color" content="#0a0b0f" />
+  <meta property="og:title" content="Nikolay — Developer, Creator &amp; Explorer" />
+  <meta property="og:description"
+    content="Personal digital card of Nikolay — developer, creator and explorer. Contacts, projects and creative work." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nikotine.me/" />
+  <meta property="og:image" content="assets/logo.png" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__glow bg__glow--top"></div>
+    <div class="bg__glow bg__glow--bottom"></div>
+    <div class="bg__lines"></div>
+  </div>
+
+  <main class="page">
+    <header class="hero">
+      <div class="hero__logo-wrap">
+        <img class="hero__logo" src="assets/logo.png" alt="Nikolay logo — letter N" width="96" height="96" />
+      </div>
+      <h1 class="hero__name">Nikolay</h1>
+      <p class="hero__tagline">Developer · Creator · Explorer</p>
+      <p class="hero__slogan">
+        Build with purpose. Create with freedom. Explore without limits.
+      </p>
+      <div class="hero__rule" aria-hidden="true"></div>
+    </header>
+
+    <section class="section section--contacts" aria-labelledby="contacts-title">
+      <h2 id="contacts-title" class="section__title">Contacts</h2>
+      <div id="contacts-list" class="contacts" role="list"></div>
+    </section>
+
+    <section class="section section--projects" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="section__title">Projects</h2>
+      <div id="projects-list" class="projects" role="list"></div>
+    </section>
+
+    <footer class="footer">
+      <span class="footer__mark" aria-hidden="true">N</span>
+      <p class="footer__text">nikotine.me</p>
+    </footer>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
