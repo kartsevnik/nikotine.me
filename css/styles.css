@@ -543,10 +543,10 @@ a {
 
 .project-card__title-row {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem 0.55rem;
-  margin-bottom: 0.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin-bottom: 0.3rem;
 }
 
 .project-card__title {
@@ -558,9 +558,17 @@ a {
   color: var(--text);
 }
 
+.project-card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
 .project-card__badge {
   display: inline-flex;
   align-items: center;
+  gap: 0.28rem;
   padding: 0.15rem 0.45rem;
   border-radius: 999px;
   border: 1px solid var(--gold-soft);
@@ -571,6 +579,32 @@ a {
   text-transform: uppercase;
   color: var(--gold-bright);
   white-space: nowrap;
+  line-height: 1.2;
+}
+
+.project-card__badge-icon {
+  display: inline-flex;
+  color: var(--gold);
+}
+
+.project-card__badge--youtube {
+  border-color: rgba(201, 80, 80, 0.28);
+  background: rgba(180, 40, 40, 0.12);
+  color: #e8b4b4;
+}
+
+.project-card__badge--youtube .project-card__badge-icon {
+  color: #e25555;
+}
+
+.project-card__badge--facebook {
+  border-color: rgba(90, 130, 200, 0.3);
+  background: rgba(50, 90, 160, 0.14);
+  color: #b8c8e8;
+}
+
+.project-card__badge--facebook .project-card__badge-icon {
+  color: #6a9adf;
 }
 
 .project-card__desc {

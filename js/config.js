@@ -44,6 +44,7 @@ window.siteConfig = {
       description: "Power Platform tutorials, tools and developer practices",
       url: "https://www.youtube.com/@PowerPlatformLaba", // POWER_PLATFORM_LAB_URL
       image: "assets/projects/power-platform-lab.png",
+      destination: "YouTube",
       comingSoon: false,
     },
     {
@@ -52,6 +53,7 @@ window.siteConfig = {
       description: "Visual stories, characters and creative experiments",
       url: "https://www.youtube.com/@animatra_official", // ANIMATRA_URL
       image: "assets/projects/animatra.png",
+      destination: "YouTube",
       comingSoon: false,
     },
     {
@@ -68,6 +70,7 @@ window.siteConfig = {
       description: "Beaches, lakes and SUP launch points in Italy",
       url: "https://www.facebook.com/groups/2184496025727612", // FACEBOOK_GROUP_URL
       image: "assets/projects/facebook-beaches.png",
+      destination: "Facebook",
       comingSoon: false,
     },
   ],

@@ -34,6 +34,37 @@
     });
   }
 
+  const destinationIcons = {
+    YouTube:
+      '<svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg>',
+    Facebook:
+      '<svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M14 8.2V6.6c0-.7.1-1.1 1.1-1.1H16.5V3h-2.3C11.5 3 10.5 4.6 10.5 6.9v1.3H8.5V11h2v10h3.5V11h2.4l.4-2.8H14z"/></svg>',
+  };
+
+  function createDestinationBadge(destination) {
+    if (!destination) return null;
+
+    const badge = document.createElement("span");
+    badge.className =
+      "project-card__badge project-card__badge--" +
+      destination.toLowerCase().replace(/\s+/g, "-");
+
+    const iconHtml = destinationIcons[destination];
+    if (iconHtml) {
+      const icon = document.createElement("span");
+      icon.className = "project-card__badge-icon";
+      icon.setAttribute("aria-hidden", "true");
+      icon.innerHTML = iconHtml;
+      badge.appendChild(icon);
+    }
+
+    const label = document.createElement("span");
+    label.textContent = destination;
+    badge.appendChild(label);
+
+    return badge;
+  }
+
   function renderContacts() {
     if (!contactsEl || !Array.isArray(config.contacts)) return;
 
@@ -95,7 +126,10 @@
         card.rel = "noopener noreferrer";
         card.setAttribute(
           "aria-label",
-          project.title + " — open project"
+          project.title +
+            (project.destination
+              ? " — open on " + project.destination
+              : " — open project")
         );
       } else {
         card.setAttribute("aria-disabled", "true");
@@ -129,11 +163,23 @@
       title.textContent = project.title;
       titleRow.appendChild(title);
 
+      const badges = document.createElement("div");
+      badges.className = "project-card__badges";
+
       if (comingSoon) {
         const badge = document.createElement("span");
         badge.className = "project-card__badge";
         badge.textContent = "Coming soon";
-        titleRow.appendChild(badge);
+        badges.appendChild(badge);
+      }
+
+      const destBadge = createDestinationBadge(project.destination);
+      if (destBadge) {
+        badges.appendChild(destBadge);
+      }
+
+      if (badges.childNodes.length) {
+        titleRow.appendChild(badges);
       }
 
       const description = document.createElement("p");
