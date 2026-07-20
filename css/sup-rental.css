@@ -886,8 +886,26 @@ body {
   }
 
   .rental-split {
+    grid-template-areas:
+      "pickup payment"
+      "note payment";
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.5rem;
+    column-gap: 1.5rem;
+    align-items: start;
+  }
+
+  .rental-split__pickup {
+    grid-area: pickup;
+    padding-bottom: 1.5rem;
+  }
+
+  .rental-split__payment {
+    grid-area: payment;
+  }
+
+  .rental-split__note {
+    grid-area: note;
+    margin-top: 0;
   }
 
   .booking-section {

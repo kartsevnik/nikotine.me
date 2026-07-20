@@ -561,7 +561,7 @@
       Copied: "Скопійовано",
       "Copy IBAN:": "Скопіюйте IBAN:",
       "Planning a group visit?": "Плануєте групову поїздку?",
-      "Some locations may charge separate beach or lido entry fees. Example: Lago di Monate — approx. €105 entry (confirm for groups). Other spots may be free or priced on request.":
+      "Some locations may charge separate beach or lido entry fees. Example: Lago di Monate — approx. €10 entry (confirm for groups). Other spots may be free or priced on request.":
         "У деяких місцях окремо оплачується вхід на пляж або до лідо. Наприклад, Lago di Monate — близько €10 за вхід (для груп потрібно уточнити). Інші місця можуть бути безкоштовними або мати ціну за запитом.",
       "Useful answers": "Корисні відповіді",
       "What is included in one set?": "Що входить до одного комплекту?",
