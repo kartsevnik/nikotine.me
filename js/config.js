@@ -64,12 +64,23 @@ window.siteConfig = {
       image: "assets/projects/jn.png",
       comingSoon: true,
     },
+  ],
+
+  supRental: [
+    {
+      id: "price-and-service",
+      title: "Price and service",
+      description: "SUP rental prices and services",
+      url: "sup-rental.html", // SUP_PRICE_URL
+      image: "assets/sup/price_ico.png",
+      comingSoon: false,
+    },
     {
       id: "facebook-group",
       title: "Beaches & SUP Spots",
       description: "Beaches, lakes and SUP launch points in Italy",
       url: "https://www.facebook.com/groups/2184496025727612", // FACEBOOK_GROUP_URL
-      image: "assets/projects/facebook-beaches.png",
+      image: "assets/sup/geo_ico.png",
       destination: "Facebook",
       comingSoon: false,
     },

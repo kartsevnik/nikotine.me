@@ -22,6 +22,36 @@ Then open [http://localhost:8080](http://localhost:8080).
 
 Opening `index.html` directly in the browser also works (no build step).
 
+## Languages
+
+The site supports Italian (`it`), English (`en`), Russian (`ru`) and Ukrainian
+(`uk`). The first visit uses the first supported language from
+`navigator.languages`; unsupported browser languages fall back to English.
+Manual selection is stored under `siteLanguage` in `localStorage`.
+
+All translations and localized metadata are stored in:
+
+```text
+js/i18n.js
+```
+
+English HTML text is the source and no-JavaScript fallback. To update a
+translation, find the English source string inside the required language
+object and change its translated value.
+
+To add another language:
+
+1. Add its ISO language code to `supportedLanguages` in `js/i18n.js`.
+2. Add the same code to the early language-detection snippet in both HTML files.
+3. Add a translation object and localized metadata in `js/i18n.js`.
+4. Add a `data-language` button to both language menus.
+5. Add the language to the detection test cases.
+
+To change the fallback language, replace the final `"en"` returned by the
+detection logic in `js/i18n.js` and both early HTML snippets. Keep the HTML
+fallback text synchronized with that language to avoid a visible language
+flash.
+
 ## Where to edit links
 
 All URLs, titles and descriptions live in one file:
@@ -55,12 +85,17 @@ projects: [
   { id: "power-platform-lab", url: "", /* POWER_PLATFORM_LAB_URL */ ... },
   { id: "animatra",           url: "", /* ANIMATRA_URL */ ... },
   { id: "jn",                 url: "", /* JN_PROJECT_URL */, comingSoon: true },
+]
+
+supRental: [
+  { id: "price-and-service",  url: "sup-rental.html", /* SUP_PRICE_URL */ ... },
   { id: "facebook-group",     url: "", /* FACEBOOK_GROUP_URL */ ... },
 ]
 ```
 
 - Empty `url` → card is not clickable.
 - For **J&N**, set `comingSoon: false` and fill `url` when the project goes live.
+- The SUP pricing page is `sup-rental.html`.
 - Rename the Facebook group title by editing `title` on `facebook-group`.
 
 ## Where to replace logos
@@ -73,7 +108,8 @@ projects: [
 | Power Platform Lab | `assets/projects/power-platform-lab.png` |
 | Animatra | `assets/projects/animatra.png` |
 | J&N | `assets/projects/jn.png` |
-| Beaches & SUP Spots | `assets/projects/facebook-beaches.png` |
+| Price and service | `assets/sup/price_ico.png` |
+| Beaches & SUP Spots | `assets/sup/geo_ico.png` |
 | Contact icons | `assets/contacts/*.png` |
 
 Prefer square PNGs (~256×256). If an image fails to load, the card shows a letter placeholder.
@@ -132,15 +168,20 @@ Optional: set `og:url` in `index.html` if you want a different canonical social 
 
 ```text
 index.html
+sup-rental.html
 css/styles.css
+css/sup-rental.css
 js/config.js
 js/main.js
+js/i18n.js
+js/sup-rental.js
 assets/
   logo.png
   favicon.png
   apple-touch-icon.png
   contacts/
   projects/
+  sup/
 img/          # original source images
 README.md
 ```

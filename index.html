@@ -14,6 +14,32 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nikotine.me/" />
   <meta property="og:image" content="assets/logo.png" />
+  <script>
+    (function () {
+      var supported = ["it", "en", "ru", "uk"];
+      var language = "";
+      try {
+        language = localStorage.getItem("siteLanguage") || "";
+      } catch (_error) {}
+      if (!supported.includes(language)) {
+        var browserLanguages = navigator.languages?.length
+          ? navigator.languages
+          : [navigator.language];
+        language =
+          browserLanguages
+            .map(function (value) { return String(value || "").toLowerCase().split("-")[0]; })
+            .find(function (value) { return supported.includes(value); }) || "en";
+      }
+      window.__initialLanguage = language;
+      document.documentElement.lang = language;
+      document.documentElement.classList.add("i18n-pending");
+      window.setTimeout(function () {
+        document.documentElement.classList.remove("i18n-pending");
+      }, 2000);
+    })();
+  </script>
+  <style>.i18n-pending body { visibility: hidden; }</style>
+  <noscript><style>body { visibility: visible !important; }</style></noscript>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +50,7 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
+<body data-page="home">
   <div class="bg" aria-hidden="true">
     <div class="bg__grid"></div>
     <div class="bg__glow bg__glow--top"></div>
@@ -33,6 +59,27 @@
   </div>
 
   <main class="page">
+    <div class="page-tools">
+      <div class="language-menu" data-language-menu>
+        <button
+          class="language-menu__trigger"
+          type="button"
+          aria-label="Language selector"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <span data-language-current>EN</span>
+          <span class="language-menu__chevron" aria-hidden="true"></span>
+        </button>
+        <div class="language-menu__options" role="group" aria-label="Language selector" hidden>
+          <button type="button" data-language="it" aria-label="Italiano">IT</button>
+          <button type="button" data-language="en" aria-label="English">EN</button>
+          <button type="button" data-language="ru" aria-label="Русский">RU</button>
+          <button type="button" data-language="uk" aria-label="Українська">UA</button>
+        </div>
+      </div>
+    </div>
+
     <header class="hero">
       <div class="hero__logo-wrap">
         <img class="hero__logo" src="assets/logo.png" alt="Nikolay logo — letter N" width="96" height="96" />
@@ -50,6 +97,11 @@
       <div id="contacts-list" class="contacts" role="list"></div>
     </section>
 
+    <section class="section section--sup-rental" aria-labelledby="sup-rental-title">
+      <h2 id="sup-rental-title" class="section__title">SUP Rental</h2>
+      <div id="sup-rental-list" class="projects" role="list"></div>
+    </section>
+
     <section class="section section--projects" aria-labelledby="projects-title">
       <h2 id="projects-title" class="section__title">Projects</h2>
       <div id="projects-list" class="projects" role="list"></div>
@@ -62,6 +114,7 @@
   </main>
 
   <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 

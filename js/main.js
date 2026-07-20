@@ -6,9 +6,18 @@
 
   const contactsEl = document.getElementById("contacts-list");
   const projectsEl = document.getElementById("projects-list");
+  const supRentalEl = document.getElementById("sup-rental-list");
 
   function hasUrl(url) {
     return typeof url === "string" && url.trim().length > 0;
+  }
+
+  function isExternalUrl(url) {
+    try {
+      return new URL(url, window.location.href).origin !== window.location.origin;
+    } catch (_error) {
+      return false;
+    }
   }
 
   function firstLetter(title) {
@@ -74,6 +83,7 @@
       const isActive = hasUrl(contact.url);
       const el = document.createElement(isActive ? "a" : "div");
       el.className = "contact-btn" + (isActive ? "" : " contact-btn--disabled");
+      el.dataset.contactId = contact.id;
       el.setAttribute("aria-label", contact.label);
 
       if (isActive) {
@@ -106,30 +116,33 @@
     contactsEl.appendChild(fragment);
   }
 
-  function renderProjects() {
-    if (!projectsEl || !Array.isArray(config.projects)) return;
+  function renderProjectList(container, items) {
+    if (!container || !Array.isArray(items)) return;
 
     const fragment = document.createDocumentFragment();
 
-    config.projects.forEach(function (project, index) {
+    items.forEach(function (project, index) {
       const comingSoon = Boolean(project.comingSoon);
       const isLink = !comingSoon && hasUrl(project.url);
       const card = document.createElement(isLink ? "a" : "div");
 
       card.className =
         "project-card" + (comingSoon ? " project-card--soon" : "");
+      card.dataset.projectId = project.id;
       card.style.setProperty("--delay", String(0.05 * index) + "s");
 
       if (isLink) {
         card.href = project.url.trim();
-        card.target = "_blank";
-        card.rel = "noopener noreferrer";
+        if (isExternalUrl(project.url)) {
+          card.target = "_blank";
+          card.rel = "noopener noreferrer";
+        }
         card.setAttribute(
           "aria-label",
           project.title +
-            (project.destination
-              ? " — open on " + project.destination
-              : " — open project")
+          (project.destination
+            ? " — open on " + project.destination
+            : " — open project")
         );
       } else {
         card.setAttribute("aria-disabled", "true");
@@ -201,7 +214,7 @@
       fragment.appendChild(card);
     });
 
-    projectsEl.appendChild(fragment);
+    container.appendChild(fragment);
   }
 
   function revealOnLoad() {
@@ -210,7 +223,49 @@
     });
   }
 
+  function updateAccessibility() {
+    const i18n = window.siteI18n;
+    if (!i18n) return;
+
+    document.querySelectorAll("[data-contact-id]").forEach(function (element) {
+      const contact = config.contacts.find(function (item) {
+        return item.id === element.dataset.contactId;
+      });
+      if (!contact) return;
+      element.setAttribute("aria-label", contact.label);
+      if (!hasUrl(contact.url)) element.title = i18n.t("Link coming soon");
+    });
+
+    const projects = [...config.projects, ...config.supRental];
+    document.querySelectorAll("[data-project-id]").forEach(function (card) {
+      const project = projects.find(function (item) {
+        return item.id === card.dataset.projectId;
+      });
+      if (!project) return;
+
+      const translatedTitle = i18n.t(project.title);
+      const comingSoon = Boolean(project.comingSoon);
+      const isLink = !comingSoon && hasUrl(project.url);
+      let action;
+
+      if (isLink && project.destination) {
+        action = i18n.t("open on") + " " + project.destination;
+      } else if (isLink) {
+        action = i18n.t("open project");
+      } else {
+        action = i18n.t(comingSoon ? "coming soon" : "link not set");
+      }
+
+      card.setAttribute("aria-label", translatedTitle + " — " + action);
+      const image = card.querySelector(".project-card__media img");
+      if (image) image.alt = translatedTitle + " " + i18n.t("logo");
+    });
+  }
+
   renderContacts();
-  renderProjects();
+  renderProjectList(projectsEl, config.projects);
+  renderProjectList(supRentalEl, config.supRental);
+  updateAccessibility();
+  window.addEventListener("site:languagechange", updateAccessibility);
   revealOnLoad();
 })();

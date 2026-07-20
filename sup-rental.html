@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUP Rental &amp; Weekend Guided Experience — Nikolay</title>
+  <meta name="description"
+    content="SUP rental in Castellanza: full kits, free pickup, and guided support on weekends." />
+  <meta name="theme-color" content="#0a0b0f" />
+  <meta property="og:title" content="SUP Rental &amp; Weekend Guided Experience" />
+  <meta property="og:description" content="Boards, full kits, free pickup, and guided support on weekends." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nikotine.me/sup-rental.html" />
+  <meta property="og:image" content="assets/sup/price_ico.png" />
+  <script>
+    (function () {
+      var supported = ["it", "en", "ru", "uk"];
+      var language = "";
+      try {
+        language = localStorage.getItem("siteLanguage") || "";
+      } catch (_error) {}
+      if (!supported.includes(language)) {
+        var browserLanguages = navigator.languages?.length
+          ? navigator.languages
+          : [navigator.language];
+        language =
+          browserLanguages
+            .map(function (value) { return String(value || "").toLowerCase().split("-")[0]; })
+            .find(function (value) { return supported.includes(value); }) || "en";
+      }
+      window.__initialLanguage = language;
+      document.documentElement.lang = language;
+      document.documentElement.classList.add("i18n-pending");
+      window.setTimeout(function () {
+        document.documentElement.classList.remove("i18n-pending");
+      }, 2000);
+    })();
+  </script>
+  <style>.i18n-pending body { visibility: hidden; }</style>
+  <noscript><style>body { visibility: visible !important; }</style></noscript>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/sup-rental.css" />
+</head>
+
+<body data-page="sup">
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__glow bg__glow--top"></div>
+    <div class="bg__glow bg__glow--bottom"></div>
+    <div class="bg__lines"></div>
+  </div>
+
+  <main class="rental-page">
+    <nav class="rental-nav" aria-label="Page navigation">
+      <a class="rental-nav__brand" href="index.html" aria-label="Back to Nikolay home page">
+        <img src="assets/logo.png" alt="" width="42" height="42" />
+        <span>Nikolay</span>
+      </a>
+      <div class="rental-nav__actions">
+        <a class="text-link" href="index.html">← Back home</a>
+        <div class="language-menu" data-language-menu>
+          <button
+            class="language-menu__trigger"
+            type="button"
+            aria-label="Language selector"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span data-language-current>EN</span>
+            <span class="language-menu__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="language-menu__options" role="group" aria-label="Language selector" hidden>
+            <button type="button" data-language="it" aria-label="Italiano">IT</button>
+            <button type="button" data-language="en" aria-label="English">EN</button>
+            <button type="button" data-language="ru" aria-label="Русский">RU</button>
+            <button type="button" data-language="uk" aria-label="Українська">UA</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="rental-hero">
+      <span class="eyebrow">Castellanza · Italy</span>
+      <h1>SUP Rental &amp;<br />Weekend Guided Experience</h1>
+      <p class="rental-hero__lead">
+        Boards, full kits, free pickup, and guided support on weekends.
+      </p>
+      <div class="button-row">
+        <a class="button button--primary" href="#pricing">View pricing</a>
+        <a class="button button--secondary" href="#booking">Book now</a>
+      </div>
+      <div class="hero-highlights" aria-label="Service highlights">
+        <span>Free pickup</span>
+        <!-- <span>Delivery available</span> -->
+        <span>Weekend support</span>
+      </div>
+    </header>
+
+    <section class="rental-section" aria-labelledby="set-title">
+      <div class="section-heading">
+        <span class="eyebrow">Your equipment</span>
+        <h2 id="set-title">What’s in one set</h2>
+        <p>
+          One set includes everything listed below. Life vests are subject to availability.
+        </p>
+      </div>
+      <ul class="set-grid">
+        <li><span aria-hidden="true">01</span>SUP board</li>
+        <li><span aria-hidden="true">02</span>Paddle</li>
+        <li><span aria-hidden="true">03</span>Leash</li>
+        <li><span aria-hidden="true">04</span>Pump</li>
+        <li><span aria-hidden="true">05</span>Pin</li>
+        <li class="set-grid__conditional">
+          <span aria-hidden="true">06</span>
+          <span>Life vest <small>Subject to availability</small></span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="pricing" class="rental-section" aria-labelledby="pricing-title">
+      <div class="section-heading">
+        <span class="eyebrow">Choose your format</span>
+        <h2 id="pricing-title">Pricing</h2>
+          <p>All prices shown below are per day.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="service-card">
+          <div class="service-card__top">
+            <span class="service-badge">Best for groups</span>
+            <span class="availability-badge">Weekend only</span>
+          </div>
+          <h3>Weekend Guided Experience</h3>
+          <p class="service-card__intro">
+            Not just board rental. A ready-to-go experience: logistics, support,
+            basic instruction, and peace of mind. Higher value, premium format.
+          </p>
+
+          <h4>What’s included</h4>
+          <ul class="check-list">
+            <li>SUP Kit</li>
+            <li>Assistance</li>
+            <li>Basic instruction</li>
+          </ul>
+
+          <div class="formula">
+            <span>Pricing formula</span>
+            <!-- Delivery formula:
+              <strong>Number of sets × guided support rate + transport fee</strong>
+              <small>Example: 5 sets × €50 + €50 transport = €300</small>
+              -->
+            <strong>Number of sets × guided support rate</strong>
+            <small>Example: 5 sets × €45 = €225</small>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+                <caption>Guided support rates per set / day</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Sets</th>
+                  <th scope="col">Price per set</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2–3 sets</td>
+                  <td>€50</td>
+                </tr>
+                <tr>
+                  <td>4–6 sets</td>
+                  <td>€45</td>
+                </tr>
+                <tr>
+                  <td>7–9 sets</td>
+                  <td>€40</td>
+                </tr>
+                <tr>
+                  <td>10–11 sets</td>
+                  <td>€35</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Delivery pricing:
+            <p class="price-note">
+              <strong>Transport / delivery:</strong> €25–60 depending on area.
+            </p>
+            -->
+          <div class="button-stack">
+            <a class="button button--secondary button--full" href="#booking">
+              Request weekend date &amp; number of sets
+            </a>
+          </div>
+        </article>
+
+        <article class="service-card service-card--featured">
+          <div class="service-card__top">
+            <span class="service-badge service-badge--popular">Most popular</span>
+          </div>
+          <h3>Self Rental</h3>
+          <p class="service-card__intro">
+            Equipment only. No guide, no accompaniment. Best for independent
+            riders who already know the basics.
+          </p>
+
+          <h4>What’s included per set</h4>
+          <ul class="check-list">
+            <li>SUP board</li>
+            <li>Paddle</li>
+            <li>Leash</li>
+            <li>Pump</li>
+            <li>Pin</li>
+            <li>Life vest</li>
+          </ul>
+
+          <div class="table-wrap">
+            <table>
+                <caption>Self rental pricing / day</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Sets</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 set</td>
+                  <td>€30</td>
+                </tr>
+                <tr>
+                  <td>2 sets</td>
+                  <td>€55</td>
+                </tr>
+                <tr>
+                  <td>3 sets</td>
+                  <td>€80</td>
+                </tr>
+                <tr>
+                  <td>4+ sets</td>
+                  <td>On request</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout">
+            <strong>Deposit required for first rental</strong>
+            <span>A refundable security deposit is required.</span>
+          </div>
+          <!-- <p class="price-note">Delivery available on request.</p> -->
+          <div class="button-stack">
+            <a class="button button--primary button--full" href="#booking">Book self rental</a>
+            <!-- <a class="text-link text-link--center" href="#booking">Request delivery quote</a> -->
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="rental-section" aria-labelledby="payments-title">
+      <div class="section-heading">
+        <span class="eyebrow">Clear and separate</span>
+        <h2 id="payments-title">Payments &amp; deposit</h2>
+      </div>
+      <div class="table-wrap table-wrap--wide">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Payment</th>
+              <th scope="col">Type</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Payment 1</td>
+              <td>Rental fee</td>
+              <td><span class="status status--warning">Non-refundable</span></td>
+            </tr>
+            <tr>
+              <td>Payment 2</td>
+              <td>Security deposit</td>
+              <td><span class="status">Refundable after inspection</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="info-card__number">01</span>
+          <h3>Cash <small>Preferred</small></h3>
+          <p>Inspection on return and immediate refund.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-card__number">02</span>
+          <h3>Online</h3>
+          <p>Refund within up to 72 hours after inspection.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="rental-split">
+      <section class="rental-section" aria-labelledby="pickup-title">
+        <div class="section-heading">
+          <span class="eyebrow">Logistics</span>
+          <h2 id="pickup-title">Pickup</h2>
+          <p>Collect your set free of charge in Castellanza.</p>
+        </div>
+        <a class="pickup-card" href="https://maps.app.goo.gl/9BrfxXymx9cqncub9" target="_blank"
+          rel="noopener noreferrer" aria-label="Open free pickup location in Google Maps">
+          <span class="pickup-card__badge">Free pickup</span>
+          <strong>Pickup from my location</strong>
+          <span>Via Nizzolina, 20, 21053 Castellanza VA</span>
+          <span class="pickup-card__map">Open in Google Maps ↗</span>
+        </a>
+
+        <!-- Delivery pricing is temporarily hidden.
+        <div class="delivery-grid">
+          <div class="table-wrap">
+            <table>
+              <caption>Delivery — round trip (two way)</caption>
+              <thead><tr><th scope="col">Zone</th><th scope="col">Price</th></tr></thead>
+              <tbody>
+                <tr><td>Local area (up to 10 km)</td><td>€20</td></tr>
+                <tr><td>Nearby beaches (10–25 km)</td><td>€35</td></tr>
+                <tr><td>Long distance (25+ km)</td><td>On request</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <caption>Delivery — one way</caption>
+              <thead><tr><th scope="col">Zone</th><th scope="col">Price</th></tr></thead>
+              <tbody>
+                <tr><td>Local area (up to 10 km)</td><td>€15</td></tr>
+                <tr><td>Nearby beaches (10–20 km)</td><td>€25</td></tr>
+                <tr><td>Long distance (30+ km)</td><td>On request</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="section-note">
+          Final delivery price depends on distance. Long-distance delivery is quoted individually.
+        </p>
+        -->
+      </section>
+
+      <section class="rental-section" aria-labelledby="pay-title">
+        <div class="section-heading">
+          <span class="eyebrow">Bank transfer</span>
+          <h2 id="pay-title">How to pay</h2>
+          <p>Use the details below for the rental payment.</p>
+        </div>
+        <div class="bank-grid">
+          <article class="bank-card">
+            <span class="bank-card__type">Payment 1 · Rental fee</span>
+            <h3>UniCredit</h3>
+            <dl>
+              <div>
+                <dt>Recipient</dt>
+                <dd>Mykola Kartsev</dd>
+              </div>
+              <div>
+                <dt>IBAN</dt>
+                <dd><code>IT67C0200820200000430117249</code></dd>
+              </div>
+              <div>
+                <dt>Payment reference</dt>
+                <dd>Noleggio SUP - First Name, Last Name, rental date</dd>
+              </div>
+            </dl>
+            <button class="copy-button" type="button" data-copy="IT67C0200820200000430117249">
+              Copy IBAN
+            </button>
+          </article>
+          <!-- PostePay deposit payment is temporarily hidden.
+          <article class="bank-card">
+            <span class="bank-card__type">Payment 2 · Security deposit</span>
+            <h3>PostePay</h3>
+            <dl>
+              <div>
+                <dt>IBAN</dt>
+                <dd><code>IT27I3608105138225071325088</code></dd>
+              </div>
+              <div>
+                <dt>Payment reference</dt>
+                <dd>Deposito cauzionale SUP - First Name, Last Name</dd>
+              </div>
+            </dl>
+            <button class="copy-button" type="button" data-copy="IT27I3608105138225071325088">
+              Copy IBAN
+            </button>
+          </article>
+          -->
+        </div>
+      </section>
+    </div>
+
+    <aside class="location-note">
+      <strong>Planning a group visit?</strong>
+      <p>
+        Some locations may charge separate beach or lido entry fees.
+        Example: Lago di Monate — approx. €10 entry (confirm for groups).
+        Other spots may be free or priced on request.
+      </p>
+    </aside>
+
+    <section class="rental-section" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <span class="eyebrow">Useful answers</span>
+        <h2 id="faq-title">FAQ</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>What is included in one set?</summary>
+          <p>One set includes a SUP board, paddle, leash, pump, pin, and life vest when available.</p>
+        </details>
+        <details>
+          <summary>What is the difference between Self Rental and Weekend Guided Experience?</summary>
+          <p>Self Rental is equipment only. Guided Experience includes support, basic instruction, and logistics, and is
+            available on weekends.</p>
+        </details>
+        <details>
+          <summary>Do I need to pay a deposit?</summary>
+          <p>Yes, a security deposit is required for first-time rentals. The amount is provided on request.</p>
+        </details>
+        <details>
+          <summary>How is the deposit returned?</summary>
+          <p>Cash deposits are refunded immediately after inspection. Online deposits are refunded within up to 72 hours
+            after inspection.</p>
+        </details>
+        <details>
+          <summary>How do I pay?</summary>
+          <p>Pay the rental fee using the UniCredit IBAN and include the exact payment reference shown above.</p>
+        </details>
+        <details>
+          <summary>Is pickup free?</summary>
+          <p>Yes, pickup from Castellanza is free.</p>
+        </details>
+        <!-- Delivery FAQ is temporarily hidden.
+          <details>
+            <summary>Is delivery included?</summary>
+            <p>No. Delivery pricing depends on distance and whether it is one-way or round trip.</p>
+          </details>
+          -->
+        <details>
+          <summary>Can I rent 4+ sets?</summary>
+          <p>Yes. Pricing for four or more self-rental sets is available on request.</p>
+        </details>
+        <details>
+          <summary>Is guided experience available on weekdays?</summary>
+          <p>No. The Guided Experience is available on weekends only.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="booking" class="booking-section" aria-labelledby="booking-title">
+      <div class="booking-section__copy">
+        <span class="eyebrow">Ready to ride?</span>
+        <h2 id="booking-title">Request a booking</h2>
+        <p>
+          Send the details below. Availability and deposit amount will be confirmed personally.
+        </p>
+      </div>
+      <form id="booking-form" class="booking-form">
+        <div class="field">
+          <label for="booking-name">Name</label>
+          <input id="booking-name" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="booking-date">Date</label>
+          <input id="booking-date" name="date" type="date" required />
+        </div>
+        <div class="field">
+          <label for="booking-sets">Number of sets</label>
+          <input id="booking-sets" name="sets" type="number" min="1" required />
+        </div>
+        <div class="field">
+          <label for="booking-service">Service type</label>
+          <select id="booking-service" name="service" required>
+            <option value="">Choose service</option>
+            <option value="self">Self Rental</option>
+            <option value="guided">Weekend Guided Experience</option>
+          </select>
+        </div>
+        <input type="hidden" name="logistics" value="pickup" />
+        <!-- Delivery form fields are temporarily hidden.
+          <div class="field field--full">
+            <label for="booking-logistics">Pickup or delivery</label>
+            <select id="booking-logistics" name="logistics" required>
+              <option value="">Choose option</option>
+              <option>Free pickup</option>
+              <option>One-way delivery</option>
+              <option>Round-trip delivery</option>
+            </select>
+          </div>
+          <div id="delivery-address-field" class="field field--full" hidden>
+            <label for="booking-address">Delivery address <span>Optional</span></label>
+            <input
+              id="booking-address"
+              name="address"
+              type="text"
+              autocomplete="street-address"
+              placeholder="Street, city, postcode"
+            />
+          </div>
+          -->
+        <button class="button button--primary field--full" type="submit">
+          Request booking via WhatsApp
+        </button>
+        <p class="form-note">Submitting opens WhatsApp with your booking details. No data is stored on this site.</p>
+      </form>
+      <a id="group-pricing-link" class="group-pricing-link"
+        href="https://wa.me/393273345667?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20SUP%20group%20pricing."
+        target="_blank" rel="noopener noreferrer">
+        Ask about group pricing ↗
+      </a>
+    </section>
+
+    <footer class="rental-footer">
+      <a href="index.html">nikotine.me</a>
+      <span>SUP Rental · Castellanza</span>
+    </footer>
+  </main>
+
+  <a class="mobile-book" href="#booking">Book now</a>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/sup-rental.js"></script>
+</body>
+
+</html>
