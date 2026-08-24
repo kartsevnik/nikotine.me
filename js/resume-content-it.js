@@ -357,11 +357,10 @@
             icon: "img/resume/italy/direct-sales.png",
             company: "Privato",
             location: "Legnano",
-            secondary: "Negozio Amazon · Social media · Comunicazione clienti",
             bullets: [
-              "Apertura e gestione negozio Amazon; contratti di collaborazione per la vendita prodotti.",
-              "Pagine business su Facebook e Instagram: post, editing foto e video.",
-              "Comunicazione con i clienti e gestione ordini.",
+              "Apertura e gestione negozio Amazon, inclusi contratti di collaborazione e inserimento prodotti.",
+              "Gestione pagine business su Facebook e Instagram: pubblicazione post, preparazione contenuti promozionali, editing foto e video.",
+              "Gestione richieste clienti, ordini e comunicazione quotidiana.",
             ],
           },
           {
@@ -370,11 +369,10 @@
             icon: "img/resume/italy/sup-service-warehouse.png",
             company: "FreeBie SRL",
             location: "Legnano",
-            secondary: "Assistenza SUP e gonfiabili · Riparazioni · Operazioni di magazzino",
             bullets: [
               "Ispezione, manutenzione e riparazione di stand-up paddle board (SUP) e altri prodotti gonfiabili.",
               "Diagnosi di perdite d’aria, problemi alle valvole e danni ai materiali; manutenzione e riparazioni di routine.",
-              "Preparazione prodotti per i clienti: controlli qualità, pulizia e assistenza.",
+              "Preparazione prodotti per i clienti: controlli qualità, pulizia e assistenza prima della consegna.",
               "Gestione merci in entrata e in uscita, preparazione ordini e organizzazione del magazzino.",
             ],
           },
@@ -392,10 +390,9 @@
             icon: "img/resume/ukraine/community-organization.png",
             company: "Organizzazione pubblica",
             location: "Mykolaiv",
-            secondary: "Eventi · Documenti comunali · Cittadini",
             bullets: [
-              "Organizzazione eventi pubblici; richieste, bozze decisioni, progetti comunali.",
-              "Comunicazione regolare con i cittadini; contatti utili con funzionari.",
+              "Organizzazione eventi pubblici e coordinamento progetti comunali, incluse richieste cittadini e bozze decisioni.",
+              "Comunicazione regolare con i cittadini e contatti operativi con funzionari locali.",
             ],
           },
           {
@@ -404,10 +401,9 @@
             icon: "img/resume/ukraine/real-estate.png",
             company: "Azienda privata",
             location: "Mykolaiv",
-            secondary: "Inquilini · Contratti · Analisi mercato · Riparazioni",
             bullets: [
-              "Ricerca e selezione inquilini; redazione contratti di locazione.",
-              "Analisi mercato immobiliare; organizzazione lavori di riparazione.",
+              "Ricerca e selezione inquilini; preparazione e negoziazione contratti di locazione.",
+              "Analisi del mercato immobiliare locale e coordinamento lavori di riparazione sugli immobili.",
             ],
           },
           {
@@ -416,10 +412,9 @@
             icon: "img/resume/ukraine/agriculture.png",
             company: "Società co-fondata",
             location: "Mykolaiv",
-            secondary: "Pratiche terreni · Logistica · Fornitori",
             bullets: [
-              "Pratiche affitto e proprietà terreni; acquisto piantine.",
-              "Logistica e attività agricole; negoziazioni con fornitori.",
+              "Pratiche di affitto e proprietà terreni; acquisto e approvvigionamento piantine.",
+              "Organizzazione logistica delle attività agricole e negoziazioni con fornitori di materiali.",
             ],
           },
           {
@@ -428,10 +423,9 @@
             icon: "img/resume/ukraine/specialist-head-of-department.png",
             company: "Comitato statale fondiario",
             location: "Area Mykolaiv",
-            secondary: "Documentazione · Accoglienza cittadini",
             bullets: [
-              "Documentazione di progetto; aggiornamenti normativi e applicazione pratica.",
-              "Gestione lavoro di gruppo; accoglienza cittadini; collegamento tra reparti.",
+              "Redazione documentazione di progetto; monitoraggio aggiornamenti normativi e applicazione pratica.",
+              "Gestione flussi di lavoro del team, accoglienza cittadini e coordinamento tra reparti.",
             ],
           },
         ],
@@ -450,11 +444,10 @@
             location: "Online",
             link: "https://learn.microsoft.com/en-us/users/mykolakartsev-4854/credentials/c05b21d856af9a4a",
             linkLabel: "Vedi credenziale",
-            summary:
-              "Completato il corso Power Platform Fundamentals e ottenuto la certificazione ufficiale Microsoft PL-900.",
             bullets: [
+              "Completato il corso Power Platform Fundamentals e ottenuta la certificazione ufficiale Microsoft PL-900.",
               "Credential ID: C05B21D856AF9A4A",
-              "Concetti fondamentali di Power Apps, Power Automate, Dataverse e soluzioni Power Platform.",
+              "Studiati Power Apps, Power Automate, Dataverse e soluzioni Power Platform end-to-end.",
             ],
           },
           {
@@ -465,11 +458,9 @@
             location: "Online",
             link: "https://edu.fls.guru/angular.html",
             linkLabel: "Corso Angular",
-            summary:
-              "Componenti, routing, servizi, HTTP client, RxJS, NgRx, testing e ottimizzazione performance.",
             bullets: [
-              "Progetto finale: MoviePulse SPA (vedi Portfolio).",
-              "Angular Material, PrimeNG, state management con NgRx.",
+              "Studiati componenti, routing, servizi, HTTP client, RxJS, NgRx, testing e ottimizzazione delle performance.",
+              "Progetto finale MoviePulse SPA (vedi Portfolio) con Angular Material, PrimeNG e state management NgRx.",
             ],
           },
           {
@@ -480,12 +471,10 @@
             location: "Milano, Italia",
             link: "https://www.itsrizzoli.it/corsi/ifts-developer/",
             linkLabel: "ITS Rizzoli",
-            summary:
-              "1.000 ore di formazione: 600 ore teoria ed esercizi pratici, 400 ore alternanza e stage.",
             bullets: [
-              "Applicazioni Java, database, tecnologie web, app Android, IoT.",
-              "Soft skills: teamwork, problem solving, comunicazione.",
-              "Progetto finale: applicazioni mobile e web.",
+              "Completate 1.000 ore di formazione: 600 ore di teoria ed esercizi pratici, 400 ore di alternanza e stage.",
+              "Sviluppate applicazioni Java, lavoro con database, tecnologie web, app Android e IoT.",
+              "Sviluppate soft skills di teamwork, problem solving e comunicazione; consegnati progetti finali mobile e web.",
             ],
           },
           {
@@ -496,10 +485,9 @@
             location: "Online",
             link: "https://edu.fls.guru/js.html",
             linkLabel: "Corso JavaScript",
-            summary:
-              "Fondamenti JavaScript: tipi, operatori, funzioni, OOP e DOM.",
             bullets: [
-              "Array, stringhe, date, gestione errori, collezioni, iteratori.",
+              "Studiati i fondamenti JavaScript: tipi, operatori, funzioni, OOP e DOM.",
+              "Esercitazioni su array, stringhe, date, gestione errori, collezioni e iteratori.",
               "Programmazione asincrona e timer.",
             ],
           },
@@ -514,10 +502,9 @@
             location: "Online",
             link: "https://edu.fls.guru/",
             linkLabel: "Corso HTML & CSS",
-            summary:
-              "Fondamenti front-end: HTML semantico, layout responsive e SCSS.",
             bullets: [
-              "CSS Flexbox, Grid, animazioni, pseudo-classi e pseudo-elementi.",
+              "Appresi i fondamenti front-end: HTML semantico, layout responsive e SCSS.",
+              "Esercitazioni su CSS Flexbox, Grid, animazioni, pseudo-classi e pseudo-elementi.",
               "Progetto finale: cinque siti responsive (vedi Portfolio).",
             ],
           },

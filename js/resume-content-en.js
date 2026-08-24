@@ -357,11 +357,10 @@
             icon: "img/resume/italy/direct-sales.png",
             company: "Private",
             location: "Legnano",
-            secondary: "Amazon store · Social media · Customer communication",
             bullets: [
-              "Opening and management of an Amazon store; collaboration contracts for product sales.",
-              "Business pages on Facebook and Instagram: posts, photo and video editing.",
-              "Customer communication and order handling.",
+              "Opened and managed an Amazon store, including collaboration contracts and product listings.",
+              "Ran business pages on Facebook and Instagram: publishing posts, preparing promotional content, photo and video editing.",
+              "Handled customer inquiries, order processing, and day-to-day communication.",
             ],
           },
           {
@@ -370,11 +369,10 @@
             icon: "img/resume/italy/sup-service-warehouse.png",
             company: "FreeBie SRL",
             location: "Legnano",
-            secondary: "SUP and inflatable product service · Repairs · Warehouse operations",
             bullets: [
               "Inspected, maintained and repaired stand-up paddle boards (SUPs) and other inflatable products.",
-              "Diagnosed air leaks, valve issues and material damage, performing routine maintenance and repair work.",
-              "Prepared products for customers, including quality checks, cleaning and servicing.",
+              "Diagnosed air leaks, valve issues and material damage; performed routine maintenance and repair work.",
+              "Prepared products for customers: quality checks, cleaning and servicing before handover.",
               "Managed incoming and outgoing goods, order preparation and warehouse organization.",
             ],
           },
@@ -392,10 +390,9 @@
             icon: "img/resume/ukraine/community-organization.png",
             company: "Public organization",
             location: "Mykolaiv",
-            secondary: "Events · Municipal documents · Citizen communication",
             bullets: [
-              "Organization of public events; work with requests, draft decisions, and municipal projects.",
-              "Regular communication with citizens; useful contacts with officials.",
+              "Organized public events and coordinated municipal projects, including citizen requests and draft decisions.",
+              "Maintained regular communication with citizens and built working contacts with local officials.",
             ],
           },
           {
@@ -404,10 +401,9 @@
             icon: "img/resume/ukraine/real-estate.png",
             company: "Private company",
             location: "Mykolaiv",
-            secondary: "Tenants · Lease contracts · Market analysis · Repairs",
             bullets: [
-              "Search and selection of tenants; drafting of lease contracts.",
-              "Real estate market analysis; organization of repair work on premises.",
+              "Searched for and selected tenants; prepared and negotiated lease contracts.",
+              "Analyzed the local real estate market and coordinated repair work on rental properties.",
             ],
           },
           {
@@ -416,10 +412,9 @@
             icon: "img/resume/ukraine/agriculture.png",
             company: "Co-founded company",
             location: "Mykolaiv",
-            secondary: "Land paperwork · Logistics · Supplier negotiations",
             bullets: [
-              "Land rental and ownership paperwork; purchase of seedlings.",
-              "Logistics and agricultural activities; negotiations with material suppliers.",
+              "Handled land rental and ownership paperwork; sourced and purchased seedlings.",
+              "Organized logistics for agricultural operations and negotiated with material suppliers.",
             ],
           },
           {
@@ -428,10 +423,9 @@
             icon: "img/resume/ukraine/specialist-head-of-department.png",
             company: "State Land Committee",
             location: "Mykolaiv area",
-            secondary: "Documentation · Citizen reception",
             bullets: [
-              "Project documentation; legislative updates and practical application.",
-              "Group work management; citizen reception; liaison between departments.",
+              "Prepared project documentation; tracked legislative updates and applied them in daily work.",
+              "Managed team workflows, citizen reception, and coordination between departments.",
             ],
           },
         ],
@@ -450,11 +444,10 @@
             location: "Online",
             link: "https://learn.microsoft.com/en-us/users/mykolakartsev-4854/credentials/c05b21d856af9a4a",
             linkLabel: "View credential",
-            summary:
-              "Completed the Power Platform Fundamentals course and earned the official Microsoft PL-900 certification.",
             bullets: [
+              "Completed the Power Platform Fundamentals course and earned the official Microsoft PL-900 certification.",
               "Credential ID: C05B21D856AF9A4A",
-              "Core concepts of Power Apps, Power Automate, Dataverse and Power Platform solutions.",
+              "Studied Power Apps, Power Automate, Dataverse and end-to-end Power Platform solutions.",
             ],
           },
           {
@@ -465,11 +458,9 @@
             location: "Online",
             link: "https://edu.fls.guru/angular.html",
             linkLabel: "Angular course",
-            summary:
-              "Components, routing, services, HTTP clients, RxJS, NgRx, testing, and performance optimization.",
             bullets: [
-              "Final project: MoviePulse SPA (see Portfolio).",
-              "Angular Material, PrimeNG, state management with NgRx.",
+              "Studied components, routing, services, HTTP clients, RxJS, NgRx, testing and performance optimization.",
+              "Built final project MoviePulse SPA (see Portfolio) with Angular Material, PrimeNG and NgRx state management.",
             ],
           },
           {
@@ -480,12 +471,10 @@
             location: "Milano, Italy",
             link: "https://www.itsrizzoli.it/corsi/ifts-developer/",
             linkLabel: "ITS Rizzoli",
-            summary:
-              "1,000 hours of training: 600 hours of theory and practical exercises, 400 hours of alternation and internship.",
             bullets: [
-              "Java applications, databases, web technologies, Android mobile apps, IoT.",
-              "Soft skills: teamwork, problem solving, communication.",
-              "Final project: mobile and web applications.",
+              "Completed 1,000 hours of training: 600 hours of theory and practical work, 400 hours of alternation and internship.",
+              "Built Java applications, worked with databases, web technologies, Android mobile apps and IoT.",
+              "Developed teamwork, problem solving and communication skills; delivered final mobile and web applications.",
             ],
           },
           {
@@ -496,10 +485,10 @@
             location: "Online",
             link: "https://edu.fls.guru/js.html",
             linkLabel: "JavaScript course",
-            summary: "Core JavaScript programming: types, operators, functions, OOP, and the DOM.",
             bullets: [
-              "Arrays, strings, dates, error handling, collections, iterators.",
-              "Asynchronous programming and timers.",
+              "Studied core JavaScript: types, operators, functions, OOP and the DOM.",
+              "Practiced arrays, strings, dates, error handling, collections and iterators.",
+              "Covered asynchronous programming and timers.",
             ],
           },
           {
@@ -513,11 +502,10 @@
             location: "Online",
             link: "https://edu.fls.guru/",
             linkLabel: "HTML & CSS course",
-            summary:
-              "Front-end fundamentals from semantic HTML to responsive layout and SCSS.",
             bullets: [
-              "CSS Flexbox, Grid, animations, pseudo-classes and pseudo-elements.",
-              "Final project: five responsive websites (see Portfolio).",
+              "Learned front-end fundamentals from semantic HTML and responsive layout to SCSS.",
+              "Practiced CSS Flexbox, Grid, animations, pseudo-classes and pseudo-elements.",
+              "Built five responsive websites as the final project (see Portfolio).",
             ],
           },
           {

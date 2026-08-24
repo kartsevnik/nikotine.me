@@ -357,11 +357,10 @@
             icon: "img/resume/italy/direct-sales.png",
             company: "Приватна діяльність",
             location: "Legnano",
-            secondary: "Amazon store · Social media · Спілкування з клієнтами",
             bullets: [
-              "Відкриття та ведення Amazon store; контракти на продаж товарів.",
-              "Business pages у Facebook і Instagram: пости, редагування фото та відео.",
-              "Спілкування з клієнтами та обробка замовлень.",
+              "Відкриття та ведення Amazon store, включно з контрактами на співпрацю та розміщенням товарів.",
+              "Ведення business pages у Facebook і Instagram: публікація постів, підготовка рекламного контенту, редагування фото та відео.",
+              "Обробка запитів клієнтів, замовлень і щоденна комунікація.",
             ],
           },
           {
@@ -370,11 +369,10 @@
             icon: "img/resume/italy/sup-service-warehouse.png",
             company: "FreeBie SRL",
             location: "Legnano",
-            secondary: "Сервіс SUP і надувних виробів · Ремонт · Складські операції",
             bullets: [
               "Огляд, обслуговування та ремонт stand-up paddle boards (SUP) та інших надувних виробів.",
               "Діагностика витоків повітря, проблем із клапанами та пошкоджень матеріалів; поточне обслуговування і ремонт.",
-              "Підготовка продукції для клієнтів: контроль якості, чистка та сервіс.",
+              "Підготовка продукції для клієнтів: контроль якості, чистка та сервіс перед видачею.",
               "Прийом і відвантаження товарів, підготовка замовлень та організація складу.",
             ],
           },
@@ -392,10 +390,9 @@
             icon: "img/resume/ukraine/community-organization.png",
             company: "Громадська організація",
             location: "Mykolaiv",
-            secondary: "Заходи · Муніципальні документи · Робота з громадянами",
             bullets: [
-              "Організація public events; робота зі зверненнями, проєктами рішень і municipal projects.",
-              "Регулярне спілкування з громадянами; корисні контакти з officials.",
+              "Організація public events і координація municipal projects, включно зі зверненнями громадян і проєктами рішень.",
+              "Регулярна комунікація з громадянами та робочі контакти з місцевими officials.",
             ],
           },
           {
@@ -404,10 +401,9 @@
             icon: "img/resume/ukraine/real-estate.png",
             company: "Приватна компанія",
             location: "Mykolaiv",
-            secondary: "Орендарі · Договори · Аналіз ринку · Ремонт",
             bullets: [
-              "Пошук і відбір орендарів; підготовка lease contracts.",
-              "Аналіз real estate market; організація repair work на об’єктах.",
+              "Пошук і відбір орендарів; підготовка та узгодження lease contracts.",
+              "Аналіз local real estate market і організація repair work на об’єктах оренди.",
             ],
           },
           {
@@ -416,10 +412,9 @@
             icon: "img/resume/ukraine/agriculture.png",
             company: "Co-founded company",
             location: "Mykolaiv",
-            secondary: "Оформлення землі · Logistics · Постачальники",
             bullets: [
-              "Оформлення оренди та ownership землі; закупівля seedlings.",
-              "Logistics і agricultural activities; переговори з material suppliers.",
+              "Оформлення оренди та ownership землі; закупівля та постачання seedlings.",
+              "Організація logistics у agricultural activities і переговори з material suppliers.",
             ],
           },
           {
@@ -428,10 +423,9 @@
             icon: "img/resume/ukraine/specialist-head-of-department.png",
             company: "State Land Committee",
             location: "Mykolaiv area",
-            secondary: "Документація · Прийом громадян",
             bullets: [
-              "Project documentation; legislative updates і practical application.",
-              "Управління group work; citizen reception; liaison між departments.",
+              "Підготовка project documentation; відстеження legislative updates і практичне застосування.",
+              "Управління team workflows, citizen reception і координація між departments.",
             ],
           },
         ],
@@ -450,11 +444,10 @@
             location: "Online",
             link: "https://learn.microsoft.com/en-us/users/mykolakartsev-4854/credentials/c05b21d856af9a4a",
             linkLabel: "Переглянути сертифікат",
-            summary:
-              "Пройшов курс Power Platform Fundamentals і отримав офіційний сертифікат Microsoft PL-900.",
             bullets: [
+              "Пройшов курс Power Platform Fundamentals і отримав офіційний сертифікат Microsoft PL-900.",
               "Credential ID: C05B21D856AF9A4A",
-              "Основи Power Apps, Power Automate, Dataverse і рішень Power Platform.",
+              "Вивчив Power Apps, Power Automate, Dataverse і end-to-end рішення Power Platform.",
             ],
           },
           {
@@ -465,11 +458,9 @@
             location: "Online",
             link: "https://edu.fls.guru/angular.html",
             linkLabel: "Курс Angular",
-            summary:
-              "Components, routing, services, HTTP clients, RxJS, NgRx, testing, performance optimization.",
             bullets: [
-              "Фінальний проєкт: MoviePulse SPA (див. Портфоліо).",
-              "Angular Material, PrimeNG, state management з NgRx.",
+              "Вивчив components, routing, services, HTTP clients, RxJS, NgRx, testing і performance optimization.",
+              "Фінальний проєкт MoviePulse SPA (див. Портфоліо) з Angular Material, PrimeNG і state management на NgRx.",
             ],
           },
           {
@@ -480,12 +471,10 @@
             location: "Milano, Italy",
             link: "https://www.itsrizzoli.it/corsi/ifts-developer/",
             linkLabel: "ITS Rizzoli",
-            summary:
-              "1 000 годин: 600 годин theory and practical exercises, 400 hours alternation and internship.",
             bullets: [
-              "Java applications, databases, web technologies, Android apps, IoT.",
-              "Soft skills: teamwork, problem solving, communication.",
-              "Final project: mobile and web applications.",
+              "Пройшов 1 000 годин навчання: 600 годин теорії та практики, 400 годин alternation і стажування.",
+              "Розробляв Java applications, працював з databases, web technologies, Android apps і IoT.",
+              "Розвивав soft skills: teamwork, problem solving, communication; здав фінальні mobile і web applications.",
             ],
           },
           {
@@ -496,10 +485,9 @@
             location: "Online",
             link: "https://edu.fls.guru/js.html",
             linkLabel: "Курс JavaScript",
-            summary:
-              "Основи JavaScript: types, operators, functions, OOP, DOM.",
             bullets: [
-              "Arrays, strings, dates, error handling, collections, iterators.",
+              "Вивчив основи JavaScript: types, operators, functions, OOP і DOM.",
+              "Відпрацював arrays, strings, dates, error handling, collections і iterators.",
               "Asynchronous programming і timers.",
             ],
           },
@@ -514,11 +502,10 @@
             location: "Online",
             link: "https://edu.fls.guru/",
             linkLabel: "Курс HTML & CSS",
-            summary:
-              "Front-end fundamentals: semantic HTML, responsive layout, SCSS.",
             bullets: [
-              "CSS Flexbox, Grid, animations, pseudo-classes and pseudo-elements.",
-              "Final project: five responsive websites (див. Портфоліо).",
+              "Освоїв front-end fundamentals: semantic HTML, responsive layout і SCSS.",
+              "Практика CSS Flexbox, Grid, animations, pseudo-classes і pseudo-elements.",
+              "Фінальний проєкт: five responsive websites (див. Портфоліо).",
             ],
           },
           {

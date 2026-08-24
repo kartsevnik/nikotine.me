@@ -883,7 +883,7 @@ body {
 .resume-timeline__body p {
   margin: 0 0 0.45rem;
   color: rgba(215, 218, 225, 0.72);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -891,7 +891,7 @@ body {
 .resume-timeline__body .resume-list {
   margin: 0;
   padding-left: 18px;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: rgba(215, 218, 225, 0.72);
   line-height: 1.5;
@@ -971,18 +971,18 @@ body {
   }
 
   .resume-timeline__marker--stack {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    gap: 0.1rem;
-    width: auto;
-    height: var(--timeline-card-icon);
+    gap: 0.08rem;
+    width: var(--timeline-card-icon);
+    height: auto;
     min-height: 0;
     padding: 0;
   }
 
   .resume-timeline__marker--stack img {
-    width: calc(var(--timeline-card-icon) * 0.78);
-    height: calc(var(--timeline-card-icon) * 0.78);
+    width: calc(var(--timeline-card-icon) * 0.72);
+    height: calc(var(--timeline-card-icon) * 0.72);
   }
 
   .resume-timeline__item:hover .resume-timeline__marker img {
@@ -1067,7 +1067,7 @@ body {
 
   .resume-timeline__body p,
   .resume-timeline__body .resume-list {
-    font-size: 0.8125rem;
+    font-size: 0.84375rem;
     font-weight: 400;
     line-height: 1.5;
     color: rgba(215, 218, 225, 0.72);
