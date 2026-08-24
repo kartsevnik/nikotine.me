@@ -188,11 +188,16 @@
 
   function renderCard(options) {
     const opts = options || {};
+    const isLanguage = Boolean(
+      opts.extraClass && opts.extraClass.indexOf("resume-card--language") !== -1
+    );
     let html =
       '<article class="resume-card' +
       (opts.extraClass ? " " + opts.extraClass : "") +
       (opts.isCurrent ? " resume-card--current" : "") +
-      '">';
+      '"' +
+      (isLanguage ? ' tabindex="0"' : "") +
+      ">";
 
     if (opts.period) {
       html += '<p class="resume-card__period">' + escapeHtml(opts.period) + "</p>";
@@ -230,52 +235,96 @@
     return html;
   }
 
-  function renderItDevelopment(accordion, labels) {
-    let html = '<div class="resume-timeline">';
-    (accordion.roles || []).forEach(function (role) {
-      const isCurrent = Boolean(role.current);
+  function formatTimelineTitleText(value) {
+    return escapeHtml(value).replace(/\n/g, "<br />");
+  }
+
+  function renderTimelineTitle(entry) {
+    const titleText = entry.role || entry.degree || "";
+    if (!titleText && !entry.roleLabel) return "";
+    let html = '<h3 class="resume-timeline__title">';
+    if (entry.roleLabel) {
       html +=
-        '<article class="resume-timeline__item' +
-        (isCurrent ? " resume-timeline__item--current" : "") +
-        '">';
+        '<span class="resume-timeline__title-label">' +
+        escapeHtml(entry.roleLabel) +
+        "</span>";
+    }
+    html += formatTimelineTitleText(titleText);
+    html += "</h3>";
+    return html;
+  }
 
-      html += '<div class="resume-timeline__marker" aria-hidden="true">';
-      if (role.icon) {
-        html +=
-          '<img src="' +
-          escapeHtml(role.icon) +
-          '" alt="" loading="lazy" />';
-      }
-      html += "</div>";
+  function renderTimelineWhen(entry) {
+    const when = [entry.location, entry.period].filter(Boolean).join(" · ");
+    if (!when) return "";
+    return (
+      '<p class="resume-timeline__when">' + escapeHtml(when) + "</p>"
+    );
+  }
 
-      html += '<div class="resume-timeline__content">';
+  function renderTimelineMetaBlock(entry, options) {
+    const opts = options || {};
+    let html = "";
+    const company = entry.company || entry.institution || "";
+    if (company) {
+      html +=
+        '<p class="resume-timeline__company">' +
+        escapeHtml(company) +
+        "</p>";
+    }
+    html += renderTimelineWhen(entry);
+    if (entry.secondary) {
+      html +=
+        '<p class="resume-timeline__secondary">' +
+        escapeHtml(entry.secondary) +
+        "</p>";
+    }
+    if (opts.linkHtml) {
+      html += '<p class="resume-timeline__link">' + opts.linkHtml + "</p>";
+    }
+    return html;
+  }
+
+  function renderTimelineItem(entry, options) {
+    const opts = options || {};
+    const isCurrent = Boolean(opts.isCurrent);
+    let html =
+      '<article class="resume-timeline__item' +
+      (isCurrent ? " resume-timeline__item--current" : "") +
+      '">';
+
+    html += renderTimelineMarker(entry.icons || entry.icon);
+
+    html += '<div class="resume-timeline__content">';
+    const titleHtml = renderTimelineTitle(entry);
+    if (titleHtml || opts.badgeLabel) {
       html += '<div class="resume-timeline__head">';
-      html +=
-        '<h3 class="resume-timeline__title">' +
-        escapeHtml(role.role) +
-        "</h3>";
-      if (isCurrent && labels.currentRole) {
+      html += titleHtml;
+      if (opts.badgeLabel) {
         html +=
           '<span class="resume-card__badge">' +
-          escapeHtml(labels.currentRole) +
+          escapeHtml(opts.badgeLabel) +
           "</span>";
       }
       html += "</div>";
-      if (role.period) {
-        html +=
-          '<p class="resume-timeline__period">' +
-          escapeHtml(role.period) +
-          "</p>";
-      }
-      if (role.meta) {
-        html +=
-          '<p class="resume-timeline__meta">' + escapeHtml(role.meta) + "</p>";
-      }
-      const bodyHtml = renderCardBody(role);
-      if (bodyHtml) {
-        html += '<div class="resume-timeline__body">' + bodyHtml + "</div>";
-      }
-      html += "</div></article>";
+    }
+    html += renderTimelineMetaBlock(entry, { linkHtml: opts.linkHtml });
+    const bodyHtml = renderCardBody(entry);
+    if (bodyHtml) {
+      html += '<div class="resume-timeline__body">' + bodyHtml + "</div>";
+    }
+    html += "</div></article>";
+    return html;
+  }
+
+  function renderItDevelopment(accordion, labels) {
+    let html = '<div class="resume-timeline">';
+    (accordion.roles || []).forEach(function (role) {
+      html += renderTimelineItem(role, {
+        isCurrent: Boolean(role.current),
+        badgeLabel:
+          role.current && labels.currentRole ? labels.currentRole : "",
+      });
     });
     html += "</div>";
     return html;
@@ -452,8 +501,9 @@
     );
   }
 
-  function renderPortfolioTechTags(technologiesLine) {
+  function renderPortfolioTechTags(technologiesLine, options) {
     if (!technologiesLine) return "";
+    const opts = options || {};
     const items = String(technologiesLine)
       .split("·")
       .map(function (item) {
@@ -462,12 +512,19 @@
       .filter(Boolean);
     if (!items.length) return "";
 
-    let html = '<div class="portfolio-pp__tech"><div class="portfolio-pp__tech-tags">';
+    const wrapClass = opts.wrapClass || "portfolio-pp__tech";
+    const tagsClass = opts.tagsClass || "portfolio-pp__tech-tags";
+    const tagClass = opts.tagClass || "portfolio-pp__tech-tag";
+
+    let html =
+      '<div class="' +
+      wrapClass +
+      '"><div class="' +
+      tagsClass +
+      '">';
     items.forEach(function (item) {
       html +=
-        '<span class="portfolio-pp__tech-tag">' +
-        escapeHtml(item) +
-        "</span>";
+        '<span class="' + tagClass + '">' + escapeHtml(item) + "</span>";
     });
     html += "</div></div>";
     return html;
@@ -504,8 +561,11 @@
         '<p class="portfolio-pp__intro">' + escapeHtml(pp.intro) + "</p>";
     }
     if (pp.focusLine) {
-      html +=
-        '<p class="portfolio-pp__focus">' + escapeHtml(pp.focusLine) + "</p>";
+      html += renderPortfolioTechTags(pp.focusLine, {
+        wrapClass: "portfolio-pp__focus-tags",
+        tagsClass: "portfolio-pp__tech-tags",
+        tagClass: "portfolio-pp__tech-tag portfolio-pp__tech-tag--focus",
+      });
     }
 
     html += renderPortfolioTechTags(pp.technologiesLine);
@@ -548,8 +608,8 @@
         '<h5 class="portfolio-pp__pcf-title">' +
         escapeHtml(
           labels.sectionSelectedWork ||
-            labels.sectionPcfExamples ||
-            "Selected Work"
+          labels.sectionPcfExamples ||
+          "Selected Work"
         ) +
         "</h5>";
       html += '<div class="portfolio-projects portfolio-projects--pcf">';
@@ -567,10 +627,10 @@
       escapeHtml(labels.sectionAngular || "Angular Projects") +
       "</h3>" +
       '<div class="portfolio-projects portfolio-projects--angular">';
-      angularProjects.forEach(function (project) {
-        html += renderPortfolioProjectCard(project, labels, "angular");
-      });
-      html += "</div></section>";
+    angularProjects.forEach(function (project) {
+      html += renderPortfolioProjectCard(project, labels, "angular");
+    });
+    html += "</div></section>";
 
     html +=
       '<section class="portfolio-section">' +
@@ -578,10 +638,10 @@
       escapeHtml(labels.sectionWeb || "Web Projects") +
       "</h3>" +
       '<div class="portfolio-projects portfolio-projects--web">';
-      webProjects.forEach(function (project) {
-        html += renderPortfolioProjectCard(project, labels, "web");
-      });
-      html += "</div></section>";
+    webProjects.forEach(function (project) {
+      html += renderPortfolioProjectCard(project, labels, "web");
+    });
+    html += "</div></section>";
 
     html += "</div>";
     return html;
@@ -608,36 +668,7 @@
   function renderCompactEntries(accordion) {
     let html = '<div class="resume-timeline">';
     (accordion.entries || []).forEach(function (entry) {
-      html += '<article class="resume-timeline__item">';
-      html += renderTimelineMarker(entry.icons || entry.icon);
-
-      html += '<div class="resume-timeline__content">';
-      if (entry.role) {
-        html +=
-          '<div class="resume-timeline__head">' +
-          '<h3 class="resume-timeline__title">' +
-          escapeHtml(entry.role) +
-          "</h3></div>";
-      }
-      if (entry.period) {
-        html +=
-          '<p class="resume-timeline__period">' +
-          escapeHtml(entry.period) +
-          "</p>";
-      }
-      let meta = entry.company || "";
-      if (entry.location) {
-        meta += (meta ? " · " : "") + entry.location;
-      }
-      if (meta) {
-        html +=
-          '<p class="resume-timeline__meta">' + escapeHtml(meta) + "</p>";
-      }
-      const bodyHtml = renderCardBody(entry);
-      if (bodyHtml) {
-        html += '<div class="resume-timeline__body">' + bodyHtml + "</div>";
-      }
-      html += "</div></article>";
+      html += renderTimelineItem(entry);
     });
     html += "</div>";
     return html;
@@ -666,41 +697,11 @@
   function renderEducation(accordion) {
     let html = '<div class="resume-timeline">';
     (accordion.entries || []).forEach(function (entry) {
-      html += '<article class="resume-timeline__item">';
-      html += renderTimelineMarker(entry.icons || entry.icon);
-
-      html += '<div class="resume-timeline__content">';
-      if (entry.degree) {
-        html +=
-          '<div class="resume-timeline__head">' +
-          '<h3 class="resume-timeline__title">' +
-          escapeHtml(entry.degree) +
-          "</h3></div>";
-      }
-      if (entry.period) {
-        html +=
-          '<p class="resume-timeline__period">' +
-          escapeHtml(entry.period) +
-          "</p>";
-      }
-      const meta = [entry.institution, entry.location]
-        .filter(Boolean)
-        .join(" · ");
-      if (meta) {
-        html +=
-          '<p class="resume-timeline__meta">' + escapeHtml(meta) + "</p>";
-      }
-      if (entry.link) {
-        html +=
-          '<p class="resume-timeline__link">' +
-          externalLink(entry.link, entry.linkLabel || entry.link) +
-          "</p>";
-      }
-      const bodyHtml = renderCardBody(entry);
-      if (bodyHtml) {
-        html += '<div class="resume-timeline__body">' + bodyHtml + "</div>";
-      }
-      html += "</div></article>";
+      html += renderTimelineItem(entry, {
+        linkHtml: entry.link
+          ? externalLink(entry.link, entry.linkLabel || entry.link)
+          : "",
+      });
     });
     html += "</div>";
     return html;

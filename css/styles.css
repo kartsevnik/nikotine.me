@@ -48,6 +48,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -59,7 +60,7 @@ body {
   line-height: var(--lh-normal);
   color: var(--text);
   background: var(--bg-deep);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img {
@@ -296,9 +297,11 @@ a {
 .page {
   position: relative;
   z-index: 1;
-  width: min(100% - 2rem, var(--max));
+  width: 100%;
+  max-width: var(--max);
   margin: 0 auto;
-  padding: 1.25rem 0 2.15rem;
+  padding: 1.25rem 1rem 2.15rem;
+  box-sizing: border-box;
 }
 
 .page-tools {
@@ -310,7 +313,7 @@ a {
 
 @media (min-width: 480px) {
   .page {
-    padding: 1.45rem 0 2.4rem;
+    padding: 1.45rem 1rem 2.4rem;
   }
 }
 
@@ -342,6 +345,7 @@ a {
   top: -1.25rem;
   left: 50%;
   width: min(160%, 820px);
+  max-width: 100vw;
   height: 9rem;
   pointer-events: none;
   opacity: 0.68;
@@ -1071,6 +1075,19 @@ body[data-page="home"] .footer {
     animation: none;
     opacity: 0.7;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__layout::before {
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+  }
+
+  .bg__glow--top {
+    width: min(100%, 620px);
   }
 }
 

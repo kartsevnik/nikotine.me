@@ -11,9 +11,11 @@ body {
 .rental-page {
   position: relative;
   z-index: 1;
-  width: min(100% - 2rem, var(--rental-max));
+  width: 100%;
+  max-width: var(--rental-max);
   margin: 0 auto;
-  padding: 1.35rem 0 3.25rem;
+  padding: 1.35rem 1rem 3.25rem;
+  box-sizing: border-box;
 }
 
 .rental-nav {
@@ -198,11 +200,9 @@ body {
   padding: 0.85rem 0.95rem;
   border: 1px solid rgba(120, 160, 190, 0.2);
   border-radius: 0.65rem;
-  background: linear-gradient(
-    180deg,
-    rgba(90, 130, 160, 0.1),
-    rgba(90, 130, 160, 0.03)
-  );
+  background: linear-gradient(180deg,
+      rgba(90, 130, 160, 0.1),
+      rgba(90, 130, 160, 0.03));
 }
 
 .repair-item h3 {
@@ -1011,7 +1011,10 @@ body {
 
 @media (max-width: 359px) {
   .rental-page {
-    width: min(100% - 1.25rem, var(--rental-max));
+    width: 100%;
+    max-width: var(--rental-max);
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
   }
 
   .rental-nav__brand span {

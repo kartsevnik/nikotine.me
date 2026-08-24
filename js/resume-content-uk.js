@@ -101,17 +101,17 @@
       {
         id: "it-experience",
         title: "IT-розробка",
-        hint: "2024 – дотепер",
+        hint: "2024 — дотепер",
         type: "itDevelopment",
         roles: [
           {
-            role: "Power Platform / Dynamics 365 Solution Developer",
+            role: "Power Platform / Dynamics 365\nSolution Developer",
             icon: "img/resume/it-development/power-platform.png",
-            period: "Листопад 2024 – дотепер",
-            meta: "Epson Italy · Cinisello Balsamo (MI) · через Computer Design S.R.L.",
+            company: "Epson Italy",
+            location: "Cinisello Balsamo (MI)",
+            period: "Лис 2024 — дотепер",
+            secondary: "Контракт через Computer Design S.R.L.",
             current: true,
-            note:
-              "Офіційний роботодавець: Computer Design S.R.L. Операційний офіс: Epson Italy.",
             bullets: [
               "Розробка та підтримка рішень Dynamics 365: C# / ASP.NET plugins, JavaScript forms і validators, FetchXML queries.",
               "Інтерфейси Angular / TypeScript для внутрішніх CRM forms.",
@@ -122,18 +122,21 @@
           {
             role: "Full Stack Developer",
             icon: "img/resume/it-development/fullstack.png",
-            period: "Липень 2024 – Жовтень 2025",
-            meta: "Everience S.p.A. · Rho (MI)",
+            company: "Everience S.p.A.",
+            location: "Rho (MI)",
+            period: "Лип 2024 — Жов 2025",
             bullets: [
               "Custom CRM & Business Dashboard: refactoring і нові business features.",
               "Оптимізація UI/UX (Angular, SCSS); realtime statistics; loading times −30%.",
             ],
           },
           {
-            role: "Stage — Full Stack Developer",
+            roleLabel: "Stage",
+            role: "Full Stack Developer",
             icon: "img/resume/it-development/trainee.png",
-            period: "Квітень 2024 – Липень 2024",
-            meta: "Everience S.p.A. · Rho (MI)",
+            company: "Everience S.p.A.",
+            location: "Rho (MI)",
+            period: "Кві 2024 — Лип 2024",
             bullets: [
               "Проєкт \"Contracts\": Angular + Node.js app для управління контрактами співробітників з нуля.",
               "Інтеграція з company DB; dynamic filters (availability, job type, priority, date, name).",
@@ -345,15 +348,16 @@
       {
         id: "italy-other",
         title: "Робота в Італії",
-        hint: "2022 – 2023",
+        hint: "2022 — 2023",
         type: "compactEntries",
         entries: [
           {
-            period: "Чер 2023 – Лис 2023",
+            period: "Чер 2023 — Лис 2023",
             role: "Прямі продажі",
             icon: "img/resume/italy/direct-sales.png",
-            company: "Приватна діяльність · Amazon store, social media, спілкування з клієнтами",
+            company: "Приватна діяльність",
             location: "Legnano",
+            secondary: "Amazon store · Social media · Спілкування з клієнтами",
             bullets: [
               "Відкриття та ведення Amazon store; контракти на продаж товарів.",
               "Business pages у Facebook і Instagram: пости, редагування фото та відео.",
@@ -361,11 +365,12 @@
             ],
           },
           {
-            period: "Чер 2022 – Трав 2023",
+            period: "Чер 2022 — Трав 2023",
             role: "Технік сервісу SUP і складу",
             icon: "img/resume/italy/sup-service-warehouse.png",
-            company: "FreeBie SRL · сервіс SUP і надувних виробів, ремонт, складські операції",
+            company: "FreeBie SRL",
             location: "Legnano",
+            secondary: "Сервіс SUP і надувних виробів · Ремонт · Складські операції",
             bullets: [
               "Огляд, обслуговування та ремонт stand-up paddle boards (SUP) та інших надувних виробів.",
               "Діагностика витоків повітря, проблем із клапанами та пошкоджень матеріалів; поточне обслуговування і ремонт.",
@@ -378,48 +383,52 @@
       {
         id: "ukraine",
         title: "Робота в Україні",
-        hint: "2011 – 2022",
+        hint: "2011 — 2022",
         type: "compactEntries",
         entries: [
           {
-            period: "Гру 2020 – Лют 2022",
+            period: "Гру 2020 — Лют 2022",
             role: "Громадська організація",
             icon: "img/resume/ukraine/community-organization.png",
-            company: "Громадська організація · заходи, муніципальні документи, робота з громадянами",
+            company: "Громадська організація",
             location: "Mykolaiv",
+            secondary: "Заходи · Муніципальні документи · Робота з громадянами",
             bullets: [
               "Організація public events; робота зі зверненнями, проєктами рішень і municipal projects.",
               "Регулярне спілкування з громадянами; корисні контакти з officials.",
             ],
           },
           {
-            period: "Трав 2017 – Лют 2022",
+            period: "Трав 2017 — Лют 2022",
             role: "Нерухомість",
             icon: "img/resume/ukraine/real-estate.png",
-            company: "Приватна компанія · орендарі, договори, аналіз ринку, ремонт",
+            company: "Приватна компанія",
             location: "Mykolaiv",
+            secondary: "Орендарі · Договори · Аналіз ринку · Ремонт",
             bullets: [
               "Пошук і відбір орендарів; підготовка lease contracts.",
               "Аналіз real estate market; організація repair work на об’єктах.",
             ],
           },
           {
-            period: "Вер 2015 – Кві 2017",
+            period: "Вер 2015 — Кві 2017",
             role: "Сільське господарство · co-founder",
             icon: "img/resume/ukraine/agriculture.png",
-            company: "Co-founded company · оформлення землі, logistics, постачальники",
+            company: "Co-founded company",
             location: "Mykolaiv",
+            secondary: "Оформлення землі · Logistics · Постачальники",
             bullets: [
               "Оформлення оренди та ownership землі; закупівля seedlings.",
               "Logistics і agricultural activities; переговори з material suppliers.",
             ],
           },
           {
-            period: "Вер 2011 – Вер 2015",
+            period: "Вер 2011 — Вер 2015",
             role: "Спеціаліст і начальник відділу",
             icon: "img/resume/ukraine/specialist-head-of-department.png",
-            company: "State Land Committee · документація, прийом громадян",
+            company: "State Land Committee",
             location: "Mykolaiv area",
+            secondary: "Документація · Прийом громадян",
             bullets: [
               "Project documentation; legislative updates і practical application.",
               "Управління group work; citizen reception; liaison між departments.",
@@ -430,12 +439,12 @@
       {
         id: "education",
         title: "Освіта",
-        hint: "2006 – 2025",
+        hint: "2006 — 2025",
         type: "education",
         entries: [
           {
-            period: "Вересень 2025",
-            degree: "Microsoft Certified: Power Platform Fundamentals (PL-900)",
+            period: "Вер 2025",
+            degree: "Microsoft Certified:\nPower Platform Fundamentals (PL-900)",
             icon: "img/resume/education/microsoft-certified.png",
             institution: "Microsoft Learn",
             location: "Online",
@@ -449,7 +458,7 @@
             ],
           },
           {
-            period: "Червень 2024 – Вересень 2024",
+            period: "Червень 2024 — Вересень 2024",
             degree: "Онлайн-курс: Angular",
             icon: "img/resume/education/angular.png",
             institution: "edu.fls.guru",
@@ -464,7 +473,7 @@
             ],
           },
           {
-            period: "Листопад 2023 – Липень 2024",
+            period: "Листопад 2023 — Липень 2024",
             degree: "IFTS Developer — Java, Android & Web",
             icon: "img/resume/education/ifts-java.png",
             institution: "ITS Academy Angelo Rizzoli",
@@ -480,7 +489,7 @@
             ],
           },
           {
-            period: "Лютий – Травень 2023",
+            period: "Лютий — Травень 2023",
             degree: "Онлайн-курс: JavaScript",
             icon: "img/resume/education/javascript.png",
             institution: "edu.fls.guru",
@@ -513,7 +522,7 @@
             ],
           },
           {
-            period: "2010 – 2012",
+            period: "2010 — 2012",
             degree: "Інженер з землеустрою та земельного кадастру",
             icon: "img/resume/education/land-registry-engineer.png",
             institution: "Південнослов'янський інститут Слов'янського університету Києва",
@@ -522,7 +531,7 @@
             linkLabel: "uni-educationukraine.com",
           },
           {
-            period: "2006 – 2010",
+            period: "2006 — 2010",
             degree: "Менеджер готельного та ресторанного бізнесу",
             icon: "img/resume/education/hotel-restaurant.png",
             institution: "Київський національний університет культури і мистецтв",

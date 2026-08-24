@@ -101,17 +101,17 @@
       {
         id: "it-experience",
         title: "IT Development",
-        hint: "2024 – Present",
+        hint: "2024 — Present",
         type: "itDevelopment",
         roles: [
           {
-            role: "Power Platform / Dynamics 365 Solution Developer",
+            role: "Power Platform / Dynamics 365\nSolution Developer",
             icon: "img/resume/it-development/power-platform.png",
-            period: "November 2024 – Present",
-            meta: "Epson Italy · Cinisello Balsamo (MI) · via Computer Design S.R.L.",
+            company: "Epson Italy",
+            location: "Cinisello Balsamo (MI)",
+            period: "Nov 2024 — Present",
+            secondary: "Contracted via Computer Design S.R.L.",
             current: true,
-            note:
-              "Official employer: Computer Design S.R.L. Operational office: Epson Italy.",
             bullets: [
               "Development and maintenance of Dynamics 365 business solutions: C# / ASP.NET plugins, JavaScript forms and validators, FetchXML queries.",
               "Angular / TypeScript interfaces for internal CRM forms.",
@@ -122,18 +122,21 @@
           {
             role: "Full Stack Developer",
             icon: "img/resume/it-development/fullstack.png",
-            period: "July 2024 – October 2025",
-            meta: "Everience S.p.A. · Rho (MI)",
+            company: "Everience S.p.A.",
+            location: "Rho (MI)",
+            period: "Jul 2024 — Oct 2025",
             bullets: [
               "Custom CRM & Business Dashboard: refactoring and new business features.",
               "Optimized UI/UX (Angular, SCSS); realtime statistics; loading times reduced by 30%.",
             ],
           },
           {
-            role: "Stage — Full Stack Developer",
+            roleLabel: "Stage",
+            role: "Full Stack Developer",
             icon: "img/resume/it-development/trainee.png",
-            period: "April 2024 – July 2024",
-            meta: "Everience S.p.A. · Rho (MI)",
+            company: "Everience S.p.A.",
+            location: "Rho (MI)",
+            period: "Apr 2024 — Jul 2024",
             bullets: [
               "\"Contracts\" project: Angular + Node.js app for employee contract management from scratch.",
               "Company DB integration; dynamic filters (availability, job type, priority, date, name).",
@@ -345,15 +348,16 @@
       {
         id: "italy-other",
         title: "Work in Italy",
-        hint: "2022 – 2023",
+        hint: "2022 — 2023",
         type: "compactEntries",
         entries: [
           {
-            period: "Jun 2023 – Nov 2023",
+            period: "Jun 2023 — Nov 2023",
             role: "Direct sales",
             icon: "img/resume/italy/direct-sales.png",
-            company: "Private · Amazon store, social media, customer communication",
+            company: "Private",
             location: "Legnano",
+            secondary: "Amazon store · Social media · Customer communication",
             bullets: [
               "Opening and management of an Amazon store; collaboration contracts for product sales.",
               "Business pages on Facebook and Instagram: posts, photo and video editing.",
@@ -361,11 +365,12 @@
             ],
           },
           {
-            period: "Jun 2022 – May 2023",
+            period: "Jun 2022 — May 2023",
             role: "SUP Service & Warehouse Technician",
             icon: "img/resume/italy/sup-service-warehouse.png",
-            company: "FreeBie SRL · SUP and inflatable product service, repairs, warehouse operations",
+            company: "FreeBie SRL",
             location: "Legnano",
+            secondary: "SUP and inflatable product service · Repairs · Warehouse operations",
             bullets: [
               "Inspected, maintained and repaired stand-up paddle boards (SUPs) and other inflatable products.",
               "Diagnosed air leaks, valve issues and material damage, performing routine maintenance and repair work.",
@@ -378,48 +383,52 @@
       {
         id: "ukraine",
         title: "Work in Ukraine",
-        hint: "2011 – 2022",
+        hint: "2011 — 2022",
         type: "compactEntries",
         entries: [
           {
-            period: "Dec 2020 – Feb 2022",
+            period: "Dec 2020 — Feb 2022",
             role: "Community organization",
             icon: "img/resume/ukraine/community-organization.png",
-            company: "Public organization · events, municipal documents, citizen communication",
+            company: "Public organization",
             location: "Mykolaiv",
+            secondary: "Events · Municipal documents · Citizen communication",
             bullets: [
               "Organization of public events; work with requests, draft decisions, and municipal projects.",
               "Regular communication with citizens; useful contacts with officials.",
             ],
           },
           {
-            period: "May 2017 – Feb 2022",
+            period: "May 2017 — Feb 2022",
             role: "Real estate",
             icon: "img/resume/ukraine/real-estate.png",
-            company: "Private company · tenants, lease contracts, market analysis, repairs",
+            company: "Private company",
             location: "Mykolaiv",
+            secondary: "Tenants · Lease contracts · Market analysis · Repairs",
             bullets: [
               "Search and selection of tenants; drafting of lease contracts.",
               "Real estate market analysis; organization of repair work on premises.",
             ],
           },
           {
-            period: "Sep 2015 – Apr 2017",
+            period: "Sep 2015 — Apr 2017",
             role: "Agriculture · co-founder",
             icon: "img/resume/ukraine/agriculture.png",
-            company: "Co-founded company · land paperwork, logistics, supplier negotiations",
+            company: "Co-founded company",
             location: "Mykolaiv",
+            secondary: "Land paperwork · Logistics · Supplier negotiations",
             bullets: [
               "Land rental and ownership paperwork; purchase of seedlings.",
               "Logistics and agricultural activities; negotiations with material suppliers.",
             ],
           },
           {
-            period: "Sep 2011 – Sep 2015",
+            period: "Sep 2011 — Sep 2015",
             role: "Specialist & Head of Department",
             icon: "img/resume/ukraine/specialist-head-of-department.png",
-            company: "State Land Committee · documentation, citizen reception",
+            company: "State Land Committee",
             location: "Mykolaiv area",
+            secondary: "Documentation · Citizen reception",
             bullets: [
               "Project documentation; legislative updates and practical application.",
               "Group work management; citizen reception; liaison between departments.",
@@ -430,12 +439,12 @@
       {
         id: "education",
         title: "Education",
-        hint: "2006 – 2025",
+        hint: "2006 — 2025",
         type: "education",
         entries: [
           {
-            period: "September 2025",
-            degree: "Microsoft Certified: Power Platform Fundamentals (PL-900)",
+            period: "Sep 2025",
+            degree: "Microsoft Certified:\nPower Platform Fundamentals (PL-900)",
             icon: "img/resume/education/microsoft-certified.png",
             institution: "Microsoft Learn",
             location: "Online",
@@ -449,7 +458,7 @@
             ],
           },
           {
-            period: "June 2024 – September 2024",
+            period: "Jun 2024 — Sep 2024",
             degree: "Online course: Angular",
             icon: "img/resume/education/angular.png",
             institution: "edu.fls.guru",
@@ -464,7 +473,7 @@
             ],
           },
           {
-            period: "November 2023 – July 2024",
+            period: "Nov 2023 — Jul 2024",
             degree: "IFTS Developer — Java, Android & Web",
             icon: "img/resume/education/ifts-java.png",
             institution: "ITS Academy Angelo Rizzoli",
@@ -480,7 +489,7 @@
             ],
           },
           {
-            period: "February – May 2023",
+            period: "Feb — May 2023",
             degree: "Online course: JavaScript",
             icon: "img/resume/education/javascript.png",
             institution: "edu.fls.guru",
@@ -512,7 +521,7 @@
             ],
           },
           {
-            period: "2010 – 2012",
+            period: "2010 — 2012",
             degree: "Engineer in land management and land registry",
             icon: "img/resume/education/land-registry-engineer.png",
             institution: "South Slavic Institute of the Slavic University of Kiev",
@@ -521,7 +530,7 @@
             linkLabel: "uni-educationukraine.com",
           },
           {
-            period: "2006 – 2010",
+            period: "2006 — 2010",
             degree: "Hotel and restaurant business manager",
             icon: "img/resume/education/hotel-restaurant.png",
             institution: "Kyiv National University of Culture and Arts",
