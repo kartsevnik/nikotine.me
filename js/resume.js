@@ -880,6 +880,28 @@
     return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   }
 
+  function isResumeMobileLayout() {
+    return window.matchMedia("(max-width: 640px)").matches;
+  }
+
+  function revealPortfolioOnMobile() {
+    if (!root || !isResumeMobileLayout()) return;
+    root.querySelectorAll("[data-pp-reveal]").forEach(function (el) {
+      el.classList.add("is-visible");
+    });
+  }
+
+  function scrollActivePanelIntoView(panel) {
+    if (!panel || !isResumeMobileLayout()) return;
+    const tabsRoot = panel.closest("[data-resume-tabs]");
+    const tabsList = tabsRoot?.querySelector(".resume-tabs__list");
+    const target = tabsList || panel;
+    target.scrollIntoView({
+      behavior: prefersReducedMotion() ? "auto" : "smooth",
+      block: "start",
+    });
+  }
+
   function playTabEnter(panel) {
     if (!panel || prefersReducedMotion()) return;
 
@@ -922,7 +944,9 @@
       if (visible) visiblePanel = panel;
     });
 
-    if (opts.animate && visiblePanel && previousTabId !== tabId) {
+    const tabChanged = previousTabId !== tabId;
+
+    if (opts.animate && visiblePanel && tabChanged) {
       playTabEnter(visiblePanel);
     }
 
@@ -937,6 +961,11 @@
 
     if (tabId === "projects") {
       initPortfolioPpReveal();
+      revealPortfolioOnMobile();
+    }
+
+    if ((opts.animate || opts.scrollPanel) && visiblePanel && tabChanged) {
+      scrollActivePanelIntoView(visiblePanel);
     }
   }
 
