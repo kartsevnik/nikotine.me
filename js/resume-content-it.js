@@ -1,0 +1,550 @@
+(function () {
+  "use strict";
+
+  window.resumeContentIt = {
+    heroLead: [
+      "Sviluppatore software con esperienza in Microsoft Dynamics 365 e soluzioni Power Platform. Lavoro su progetti enterprise, sviluppando e mantenendo applicazioni business con Power Platform, C# / .NET, JavaScript e REST API.",
+      "La mia esperienza include plugin personalizzati, logica di business e integrazioni, oltre a interfacce utente con Angular e TypeScript. Mi concentro su affidabilità, performance e manutenibilità in ambienti enterprise e team multi-vendor.",
+    ],
+    heroSoftSkills: [
+      "Requisiti → soluzione",
+      "Delivery enterprise",
+      "Soluzioni mantenibili",
+      "Remote e multi-vendor",
+    ],
+    certification: {
+      name: "Microsoft Certified: Power Platform Fundamentals (PL-900)",
+      credentialId: "C05B21D856AF9A4A",
+      period: "Settembre 2025",
+      shareUrl:
+        "https://learn.microsoft.com/en-us/users/mykolakartsev-4854/credentials/c05b21d856af9a4a",
+    },
+    github: {
+      url: "https://github.com/kartsevnik/",
+      label: "GitHub",
+    },
+    labels: {
+      credentialId: "Credential ID:",
+      link: "Link:",
+      navSkills: "Competenze",
+      navItExperience: "Sviluppo IT",
+      navProjects: "Portfolio",
+      navItaly: "Italia",
+      navUkraine: "Ucraina",
+      navEducation: "Istruzione",
+      navLanguages: "Lingue",
+      currentRole: "Attuale",
+      tablePeriod: "Periodo",
+      tableRole: "Ruolo",
+      tableDetails: "Dettagli",
+      tabsAriaLabel: "Esperienza e background",
+    },
+    skills: {
+      title: "Competenze principali",
+      groups: [
+        {
+          title: "POWER PLATFORM",
+          tags: [
+            "Power Apps",
+            "Model-Driven Apps",
+            "Canvas Apps",
+            "Dataverse",
+            "Power Automate",
+            "PCF",
+          ],
+        },
+        {
+          title: "DYNAMICS 365",
+          tags: [
+            "C# Plugins",
+            "JavaScript",
+            "Web Resources",
+            "Command Bar",
+            "Ribbon Workbench",
+            "Security Roles",
+            "FetchXML",
+          ],
+        },
+        {
+          title: "BACKEND",
+          tags: ["C#", ".NET", "ASP.NET", "REST API", "JSON"],
+        },
+        {
+          title: "FRONTEND",
+          tags: [
+            "Angular",
+            "TypeScript",
+            "JavaScript",
+            "HTML",
+            "SCSS",
+            "CSS",
+          ],
+        },
+        {
+          title: "TOOLS",
+          tags: [
+            "Git",
+            "Azure DevOps",
+            "Visual Studio",
+            "VS Code",
+            "Postman",
+            "XrmToolBox",
+          ],
+        },
+        {
+          title: "DATA",
+          tags: ["SQL Server", "MySQL", "FetchXML", "Dataverse"],
+        },
+      ],
+    },
+    accordions: [
+      {
+        id: "it-experience",
+        title: "Sviluppo IT",
+        hint: "2024 – Presente",
+        type: "itDevelopment",
+        roles: [
+          {
+            role: "Power Platform / Dynamics 365 Solution Developer",
+            icon: "img/resume/it-development/power-platform.png",
+            period: "Novembre 2024 – Presente",
+            meta: "Epson Italy · Cinisello Balsamo (MI) · tramite Computer Design S.R.L.",
+            current: true,
+            note:
+              "Datore di lavoro ufficiale: Computer Design S.R.L. Sede operativa: Epson Italy.",
+            bullets: [
+              "Sviluppo e manutenzione soluzioni Dynamics 365: plugin C# / ASP.NET, form e validatori JavaScript, query FetchXML.",
+              "Interfacce Angular / TypeScript per form CRM interni.",
+              "Integrazioni REST API con job asincroni via Hangfire.",
+              "Documentazione tecnica e partecipazione all'architettura delle soluzioni.",
+            ],
+          },
+          {
+            role: "Full Stack Developer",
+            icon: "img/resume/it-development/fullstack.png",
+            period: "Luglio 2024 – Ottobre 2025",
+            meta: "Everience S.p.A. · Rho (MI)",
+            bullets: [
+              "CRM personalizzato e Business Dashboard: refactoring e nuove funzionalità business.",
+              "Ottimizzazione UI/UX (Angular, SCSS); statistiche realtime; tempi di caricamento −30%.",
+            ],
+          },
+          {
+            role: "Stage — Full Stack Developer",
+            icon: "img/resume/it-development/trainee.png",
+            period: "Aprile 2024 – Luglio 2024",
+            meta: "Everience S.p.A. · Rho (MI)",
+            bullets: [
+              "Progetto \"Contracts\": app Angular + Node.js per gestione contratti dipendenti from scratch.",
+              "Integrazione DB aziendale; filtri dinamici (disponibilità, tipo lavoro, priorità, data, nome).",
+              "Viste dettagliate contratto/dipendente e layout responsive per desktop e mobile.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "projects",
+        title: "Portfolio",
+        hint: "Power Platform · Angular · Web",
+        type: "portfolio",
+        portfolio: {
+          labels: {
+            sectionPowerPlatform: "Power Platform",
+            sectionAngular: "Progetti Angular",
+            sectionWeb: "Progetti Web",
+            technologies: "Tecnologie",
+            sectionCapabilities: "Competenze",
+            sectionSelectedWork: "Lavori selezionati",
+            sectionPcfExamples: "Esempi di PCF custom controls",
+            myRole: "Il mio ruolo",
+            previous: "Precedente",
+            next: "Successivo",
+            slide: "Slide",
+            viewImage: "Visualizza immagine",
+            screenshotsComingSoon: "Screenshot in arrivo",
+            github: "GitHub",
+            liveDemo: "Demo live",
+            liveSite: "Sito live",
+          },
+          sections: {
+            powerPlatform: {
+              title: "Microsoft Power Platform & Dynamics 365 Developer",
+              intro:
+                "Progetto e personalizzo applicazioni business con Microsoft Power Platform, Dynamics 365 e Dataverse.",
+              focusLine:
+                "Model-Driven Apps · Automazione · Custom Development · Security",
+              workAreas: [
+                {
+                  title: "Business Applications",
+                  line: "Model-Driven Apps · Forms · Views · Business Logic · Dataverse",
+                },
+                {
+                  title: "Custom Development",
+                  line: "C# Plugins · JavaScript · PCF · Web Resources · Command Bar",
+                },
+                {
+                  title: "Security & Access",
+                  line: "Security Roles · Form Access · Configurazione role-based",
+                },
+                {
+                  title: "Maintenance",
+                  line: "Bug Fixing · Change Requests · Troubleshooting · Extensions",
+                },
+              ],
+              pcfExamples: [
+                {
+                  id: "pcf-status-action-button",
+                  title: "StatusActionButton",
+                  bullets: [
+                    "Controllo PCF riutilizzabile (TypeScript, EpsonControls) che sostituisce un campo Yes/No standard con un pulsante azione legato al valore del flag.",
+                    "Apre una HTML web resource configurabile in una finestra modale via Xrm.Navigation.navigateTo con un contratto JSON neutro (contractVersion, parametri di contesto, metadati del record).",
+                    "Separazione delle responsabilità: PCF per UI e navigazione; web resource per logica di business, caricamento dati e API.",
+                    "Proprietà configurabili nel form: label, dimensione dialogo, quattro parametri di contesto e payload JSON — senza modifiche al codice.",
+                    "Impacchettato come solution Dataverse managed/unmanaged con documentazione e web resource demo.",
+                  ],
+                  role: "Architettura, sviluppo, packaging della solution e documentazione per amministratori.",
+                  technologies: [
+                    "TypeScript",
+                    "PCF",
+                    "Dataverse",
+                    "HTML Web Resources",
+                    "Xrm.Navigation",
+                    "npm",
+                    "Solution Packager",
+                  ],
+                  images: [],
+                },
+                {
+                  id: "pcf-custom-text-input-tooltip",
+                  title: "CustomTextInputTooltip",
+                  bullets: [
+                    "Controllo PCF per Single Line of Text e Text Area con icona di aiuto e tooltip contestuale.",
+                    "Lazy-load del contenuto HTML da web resource Dataverse via fetch, con fallback iframe e caching in memoria.",
+                    "UX: hover con ritardo, toggle click/touch, Escape; position: fixed per evitare clipping del form.",
+                    "Accessibilità: iconAriaLabel configurabile, navigazione da tastiera e supporto ARIA.",
+                    "Vanilla TypeScript (senza React/Fluent UI) per bundle minimo; web resource di esempio e form scripts per lock del campo su record esistenti.",
+                  ],
+                  technologies: [
+                    "TypeScript",
+                    "PCF",
+                    "CSS",
+                    "Dataverse Web Resources",
+                    "fetch API",
+                    "npm",
+                    "Solution Packager",
+                  ],
+                  images: [],
+                },
+              ],
+              technologiesLine:
+                "Power Apps · Dynamics 365 · Dataverse · C# · JavaScript · PCF · Power Automate",
+            },
+            angularProjects: [
+              {
+                id: "angular-moviepulse",
+                title: "MoviePulse — ricerca e gestione film",
+                bullets: [
+                  "Interamente in Angular 17 con NgRx Store per state management e RxJS per data streams reattivi.",
+                  "Integrazione con TMDb API (featured movies, watchlists, dettagli TV series).",
+                  "Interfaccia responsive con PrimeNG.",
+                  "Authentication e persistence con Firebase Authentication e Firestore (AngularFire).",
+                ],
+                role: "Fullstack developer (design, coding, debugging, deployment).",
+                technologies: [
+                  "Angular 17",
+                  "NgRx",
+                  "RxJS",
+                  "PrimeNG",
+                  "Firebase",
+                  "AngularFire",
+                  "TMDb API",
+                  "TypeScript",
+                ],
+                images: [],
+              },
+              {
+                id: "angular-contracts",
+                title: "Contracts — gestione contratti dipendenti",
+                bullets: [
+                  "Web app Angular + Node.js per la gestione employee contracts — sviluppata from scratch.",
+                  "Integrazione con company DB.",
+                  "Dynamic filters: availability, job type, priority, date, name.",
+                  "Detailed contract/employee view e layout responsive per desktop e mobile.",
+                ],
+                technologies: [
+                  "Angular",
+                  "Node.js",
+                  "TypeScript",
+                  "REST API",
+                  "SCSS",
+                ],
+                images: [],
+              },
+            ],
+            webProjects: [
+              {
+                id: "web-gericht",
+                title: "Gericht Restaurant",
+                description: "Landing page responsive per ristorante. Realizzato nel 2022.",
+                technologies: [
+                  "HTML",
+                  "CSS / SCSS",
+                  "JavaScript",
+                  "Responsive Web Design",
+                ],
+                liveSite:
+                  "https://kartsevnik.github.io/portfolio-gericht/home-restaurant.html",
+                thumbnail: {
+                  src: "img/resume/portfolio/web/gericht.jpg",
+                  alt: "Gericht Restaurant",
+                },
+              },
+              {
+                id: "web-gocorona",
+                title: "GoCorona",
+                description: "Landing page healthcare. Realizzato nel 2022.",
+                technologies: [
+                  "HTML",
+                  "CSS / SCSS",
+                  "JavaScript",
+                  "Responsive Web Design",
+                ],
+                liveSite: "https://kartsevnik.github.io/portfolio-GoCorona/",
+                thumbnail: { src: "img/resume/portfolio/web/gocorona.jpg", alt: "GoCorona" },
+              },
+              {
+                id: "web-doogie",
+                title: "Doogie",
+                description: "Landing page servizi per pets. Realizzato nel 2022.",
+                technologies: [
+                  "HTML",
+                  "CSS / SCSS",
+                  "JavaScript",
+                  "Responsive Web Design",
+                ],
+                liveSite: "https://kartsevnik.github.io/portfolio-Doogie/",
+                thumbnail: { src: "img/resume/portfolio/web/doogie.jpg", alt: "Doogie" },
+              },
+              {
+                id: "web-salad",
+                title: "Salad",
+                description: "Landing page food delivery. Realizzato nel 2022.",
+                technologies: [
+                  "HTML",
+                  "CSS / SCSS",
+                  "JavaScript",
+                  "Responsive Web Design",
+                ],
+                liveSite: "https://kartsevnik.github.io/portfolio-salad/",
+                thumbnail: { src: "img/resume/portfolio/web/salad.jpg", alt: "Salad" },
+              },
+            ],
+          },
+        },
+      },
+      {
+        id: "italy-other",
+        title: "Lavoro in Italia",
+        hint: "2022 – 2023",
+        type: "compactEntries",
+        entries: [
+          {
+            period: "Giu 2023 – Nov 2023",
+            role: "Vendita diretta",
+            icon: "img/resume/italy/direct-sales.png",
+            company: "Privato · negozio Amazon, social media, comunicazione clienti",
+            location: "Legnano",
+            bullets: [
+              "Apertura e gestione negozio Amazon; contratti di collaborazione per la vendita prodotti.",
+              "Pagine business su Facebook e Instagram: post, editing foto e video.",
+              "Comunicazione con i clienti e gestione ordini.",
+            ],
+          },
+          {
+            period: "Giu 2022 – Mag 2023",
+            role: "Tecnico assistenza SUP e magazzino",
+            icon: "img/resume/italy/sup-service-warehouse.png",
+            company: "FreeBie SRL · assistenza SUP e gonfiabili, riparazioni, operazioni di magazzino",
+            location: "Legnano",
+            bullets: [
+              "Ispezione, manutenzione e riparazione di stand-up paddle board (SUP) e altri prodotti gonfiabili.",
+              "Diagnosi di perdite d’aria, problemi alle valvole e danni ai materiali; manutenzione e riparazioni di routine.",
+              "Preparazione prodotti per i clienti: controlli qualità, pulizia e assistenza.",
+              "Gestione merci in entrata e in uscita, preparazione ordini e organizzazione del magazzino.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "ukraine",
+        title: "Lavoro in Ucraina",
+        hint: "2011 – 2022",
+        type: "compactEntries",
+        entries: [
+          {
+            period: "Dic 2020 – Feb 2022",
+            role: "Organizzazione comunitaria",
+            icon: "img/resume/ukraine/community-organization.png",
+            company: "Organizzazione pubblica · eventi, documenti comunali, cittadini",
+            location: "Mykolaiv",
+            bullets: [
+              "Organizzazione eventi pubblici; richieste, bozze decisioni, progetti comunali.",
+              "Comunicazione regolare con i cittadini; contatti utili con funzionari.",
+            ],
+          },
+          {
+            period: "Mag 2017 – Feb 2022",
+            role: "Immobiliare",
+            icon: "img/resume/ukraine/real-estate.png",
+            company: "Azienda privata · inquilini, contratti, analisi mercato, riparazioni",
+            location: "Mykolaiv",
+            bullets: [
+              "Ricerca e selezione inquilini; redazione contratti di locazione.",
+              "Analisi mercato immobiliare; organizzazione lavori di riparazione.",
+            ],
+          },
+          {
+            period: "Set 2015 – Apr 2017",
+            role: "Agricoltura · co-fondatore",
+            icon: "img/resume/ukraine/agriculture.png",
+            company: "Società co-fondata · pratiche terreni, logistica, fornitori",
+            location: "Mykolaiv",
+            bullets: [
+              "Pratiche affitto e proprietà terreni; acquisto piantine.",
+              "Logistica e attività agricole; negoziazioni con fornitori.",
+            ],
+          },
+          {
+            period: "Set 2011 – Set 2015",
+            role: "Specialista e Capo reparto",
+            icon: "img/resume/ukraine/specialist-head-of-department.png",
+            company: "Comitato statale fondiario · documentazione, accoglienza cittadini",
+            location: "Area Mykolaiv",
+            bullets: [
+              "Documentazione di progetto; aggiornamenti normativi e applicazione pratica.",
+              "Gestione lavoro di gruppo; accoglienza cittadini; collegamento tra reparti.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "education",
+        title: "Istruzione",
+        hint: "2006 – 2025",
+        type: "education",
+        entries: [
+          {
+            period: "Settembre 2025",
+            degree: "Microsoft Certified: Power Platform Fundamentals (PL-900)",
+            icon: "img/resume/education/microsoft-certified.png",
+            institution: "Microsoft Learn",
+            location: "Online",
+            link: "https://learn.microsoft.com/en-us/users/mykolakartsev-4854/credentials/c05b21d856af9a4a",
+            linkLabel: "Vedi credenziale",
+            summary:
+              "Completato il corso Power Platform Fundamentals e ottenuto la certificazione ufficiale Microsoft PL-900.",
+            bullets: [
+              "Credential ID: C05B21D856AF9A4A",
+              "Concetti fondamentali di Power Apps, Power Automate, Dataverse e soluzioni Power Platform.",
+            ],
+          },
+          {
+            period: "Giugno 2024 – Settembre 2024",
+            degree: "Corso online: Angular",
+            icon: "img/resume/education/angular.png",
+            institution: "edu.fls.guru",
+            location: "Online",
+            link: "https://edu.fls.guru/angular.html",
+            linkLabel: "Corso Angular",
+            summary:
+              "Componenti, routing, servizi, HTTP client, RxJS, NgRx, testing e ottimizzazione performance.",
+            bullets: [
+              "Progetto finale: MoviePulse SPA (vedi Portfolio).",
+              "Angular Material, PrimeNG, state management con NgRx.",
+            ],
+          },
+          {
+            period: "Novembre 2023 – Luglio 2024",
+            degree: "IFTS Developer — Java, Android e Web",
+            icon: "img/resume/education/ifts-java.png",
+            institution: "ITS Academy Angelo Rizzoli",
+            location: "Milano, Italia",
+            link: "https://www.itsrizzoli.it/corsi/ifts-developer/",
+            linkLabel: "ITS Rizzoli",
+            summary:
+              "1.000 ore di formazione: 600 ore teoria ed esercizi pratici, 400 ore alternanza e stage.",
+            bullets: [
+              "Applicazioni Java, database, tecnologie web, app Android, IoT.",
+              "Soft skills: teamwork, problem solving, comunicazione.",
+              "Progetto finale: applicazioni mobile e web.",
+            ],
+          },
+          {
+            period: "Febbraio – Maggio 2023",
+            degree: "Corso online: JavaScript",
+            icon: "img/resume/education/javascript.png",
+            institution: "edu.fls.guru",
+            location: "Online",
+            link: "https://edu.fls.guru/js.html",
+            linkLabel: "Corso JavaScript",
+            summary:
+              "Fondamenti JavaScript: tipi, operatori, funzioni, OOP e DOM.",
+            bullets: [
+              "Array, stringhe, date, gestione errori, collezioni, iteratori.",
+              "Programmazione asincrona e timer.",
+            ],
+          },
+          {
+            period: "Nel corso del 2022",
+            degree: "Corso online: HTML & CSS",
+            icons: [
+              "img/resume/education/html-css.png",
+              "img/resume/education/css3.png",
+            ],
+            institution: "edu.fls.guru",
+            location: "Online",
+            link: "https://edu.fls.guru/",
+            linkLabel: "Corso HTML & CSS",
+            summary:
+              "Fondamenti front-end: HTML semantico, layout responsive e SCSS.",
+            bullets: [
+              "CSS Flexbox, Grid, animazioni, pseudo-classi e pseudo-elementi.",
+              "Progetto finale: cinque siti responsive (vedi Portfolio).",
+            ],
+          },
+          {
+            period: "2010 – 2012",
+            degree: "Ingegnere in gestione e catasto fondiario",
+            icon: "img/resume/education/land-registry-engineer.png",
+            institution:
+              "Istituto slavo meridionale dell'Università slava di Kiev",
+            location: "Mykolaiv, Ucraina",
+            link: "https://uni-educationukraine.com/ru/university/kievskij-universitet-slavistiki/",
+            linkLabel: "uni-educationukraine.com",
+          },
+          {
+            period: "2006 – 2010",
+            degree: "Manager settore alberghiero e ristorazione",
+            icon: "img/resume/education/hotel-restaurant.png",
+            institution: "Università nazionale di cultura e arti di Kiev",
+            location: "Mykolaiv, Ucraina",
+            link: "https://kuk.edu.ua/",
+            linkLabel: "kuk.edu.ua",
+          },
+        ],
+      },
+      {
+        id: "languages",
+        title: "Lingue",
+        hint: "UA · RU · IT · EN",
+        type: "languages",
+        rows: [
+          { name: "Ucraino", level: "Madrelingua", langCode: "ua" },
+          { name: "Russo", level: "Madrelingua", langCode: "ru" },
+          { name: "Italiano", level: "B2", langCode: "it" },
+          { name: "Inglese", level: "B1–B2", langCode: "en" },
+        ],
+      },
+    ],
+  };
+})();

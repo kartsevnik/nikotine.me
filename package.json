@@ -1,0 +1,11 @@
+{
+  "name": "nikotine-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "optimize:portfolio-images": "node scripts/optimize-portfolio-images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.3"
+  }
+}

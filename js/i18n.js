@@ -11,22 +11,66 @@
       en: {
         title: "Nikolay — Developer, Creator & Explorer",
         description:
-          "Personal digital card of Nikolay — developer, creator and explorer. Contacts, projects and creative work.",
+          "Professional profile of Nikolay — Power Platform and web developer. Resume, services, contacts and projects.",
       },
       it: {
         title: "Nikolay — Sviluppatore, Creatore ed Esploratore",
         description:
-          "Il biglietto da visita digitale di Nikolay — sviluppatore, creatore ed esploratore. Contatti, progetti e lavori creativi.",
+          "Profilo professionale di Nikolay — sviluppatore Power Platform e web. Curriculum, servizi, contatti e progetti.",
       },
       ru: {
         title: "Nikolay — Разработчик, Автор и Исследователь",
         description:
-          "Цифровая визитка Николая — разработчика, автора и исследователя. Контакты, проекты и творческие работы.",
+          "Профессиональный профиль Николая — разработчика Power Platform и web. Резюме, услуги, контакты и проекты.",
       },
       uk: {
         title: "Nikolay — Розробник, Автор і Дослідник",
         description:
-          "Цифрова візитівка Миколи — розробника, автора й дослідника. Контакти, проєкти та творчі роботи.",
+          "Професійний профіль Миколи — розробника Power Platform і web. Резюме, послуги, контакти та проєкти.",
+      },
+    },
+    resume: {
+      en: {
+        title: "Resume — Nikolay",
+        description:
+          "Work experience, skills and professional background of Nikolay — Power Platform and web developer.",
+      },
+      it: {
+        title: "Curriculum — Nikolay",
+        description:
+          "Esperienza lavorativa, competenze e background professionale di Nikolay — sviluppatore Power Platform e web.",
+      },
+      ru: {
+        title: "Резюме — Nikolay",
+        description:
+          "Опыт работы, навыки и профессиональный бэкграунд Николая — разработчика Power Platform и web.",
+      },
+      uk: {
+        title: "Резюме — Nikolay",
+        description:
+          "Досвід роботи, навички та професійний бекграунд Миколи — розробника Power Platform і web.",
+      },
+    },
+    services: {
+      en: {
+        title: "What I Can Help With — Nikolay",
+        description:
+          "Practical help with Power Platform & Dynamics 365, web development, and SUP services.",
+      },
+      it: {
+        title: "Come posso aiutarti — Nikolay",
+        description:
+          "Supporto pratico su Power Platform & Dynamics 365, sviluppo web e servizi SUP.",
+      },
+      ru: {
+        title: "Чем могу помочь — Nikolay",
+        description:
+          "Практическая помощь по Power Platform & Dynamics 365, web-разработке и услугам SUP.",
+      },
+      uk: {
+        title: "Чим можу допомогти — Nikolay",
+        description:
+          "Практична допомога з Power Platform & Dynamics 365, web-розробкою та послугами SUP.",
       },
     },
     sup: {
@@ -58,14 +102,114 @@
     it: {
       "Language selector": "Selezione lingua",
       "Nikolay logo — letter N": "Logo Nikolay — lettera N",
+      "Nikolay Kartsev": "Nikolay Kartsev",
+      Kartsev: "Kartsev",
       "Developer · Creator · Explorer": "Sviluppatore · Creatore · Esploratore",
       "Build with purpose. Create with freedom. Explore without limits.":
         "Costruisci con uno scopo. Crea in libertà. Esplora senza limiti.",
       Contacts: "Contatti",
-      Projects: "Progetti",
-      "SUP Rental": "Noleggio SUP",
-      "Power Platform tutorials, tools and developer practices":
-        "Tutorial, strumenti e pratiche di sviluppo per Power Platform",
+      "Work & Expertise": "Lavoro e competenze",
+      "SUP Services": "Servizi SUP",
+      "Creative Projects": "Progetti creativi",
+      Resume: "Curriculum",
+      "What I Can Help With": "Come posso aiutarti",
+      "Work experience, skills and background":
+        "Esperienza lavorativa, competenze e background",
+      "Power Platform solutions and web development":
+        "Power Platform, sviluppo web e servizi SUP",
+      "Improve, automate and customize business applications and CRM":
+        "Power Platform, sviluppo web e servizi SUP",
+      "Power Platform, web development and SUP services":
+        "Power Platform, sviluppo web e servizi SUP",
+      "I work across three practical areas: Microsoft Power Platform development, web development and SUP services.":
+        "Lavoro su tre aree pratiche: sviluppo Microsoft Power Platform, sviluppo web e servizi SUP.",
+      "I help businesses improve, automate and customize their internal applications and CRM processes — from fixing existing issues to adding new functionality and simplifying everyday work.":
+        "Lavoro su tre aree pratiche: sviluppo Microsoft Power Platform, sviluppo web e servizi SUP.",
+      Services: "Servizi",
+      "Power Platform & Dynamics 365": "Power Platform & Dynamics 365",
+      "Development, customization and troubleshooting of existing business applications.":
+        "Sviluppo, personalizzazione e risoluzione di problemi di applicazioni aziendali esistenti.",
+      "Custom functionality": "Funzionalità personalizzate",
+      "Plugins, PCF controls, custom buttons and web resources.":
+        "Plugin, controlli PCF, pulsanti personalizzati e web resources.",
+      "Forms & business logic": "Form e logica di business",
+      "JavaScript validation, notifications, conditional behaviour and automation.":
+        "Validazione JavaScript, notifiche, comportamento condizionale e automazione.",
+      "Power Automate": "Power Automate",
+      "New flows, troubleshooting and improvements to existing processes.":
+        "Nuovi flow, troubleshooting e miglioramenti ai processi esistenti.",
+      "Dataverse & Model-Driven Apps": "Dataverse & Model-Driven Apps",
+      "Tables, forms, views, relationships and application configuration.":
+        "Tabelle, form, view, relazioni e configurazione delle applicazioni.",
+      "Access & roles": "Accessi e ruoli",
+      "Security roles and access configuration inside Dynamics 365.":
+        "Ruoli di sicurezza e configurazione degli accessi in Dynamics 365.",
+      "Bug fixing & change requests": "Bug fixing e change request",
+      "Fixing existing solutions and implementing new business requirements.":
+        "Correzione di soluzioni esistenti e implementazione di nuovi requisiti di business.",
+      "Power Apps · Dynamics 365 · Dataverse · Power Automate · C# · JavaScript · TypeScript":
+        "Power Apps · Dynamics 365 · Dataverse · Power Automate · C# · JavaScript · TypeScript",
+      "Web Development": "Sviluppo web",
+      "Websites and web applications — from simple responsive pages to Angular-based applications.":
+        "Siti e applicazioni web — da pagine responsive semplici ad applicazioni basate su Angular.",
+      Websites: "Siti web",
+      "Landing pages, portfolio websites and small business websites.":
+        "Landing page, siti portfolio e piccoli siti aziendali.",
+      "Responsive development": "Sviluppo responsive",
+      "Layouts optimized for desktop, tablet and mobile.":
+        "Layout ottimizzati per desktop, tablet e mobile.",
+      "Angular applications": "Applicazioni Angular",
+      "Interactive web applications built with Angular and TypeScript.":
+        "Applicazioni web interattive con Angular e TypeScript.",
+      "API integration": "Integrazione API",
+      "Connecting interfaces with REST APIs and external services.":
+        "Collegamento delle interfacce con REST API e servizi esterni.",
+      "Forms & UI logic": "Form e logica UI",
+      "Validation, user interactions and reusable components.":
+        "Validazione, interazioni utente e componenti riutilizzabili.",
+      "Existing projects": "Progetti esistenti",
+      "Bug fixing, responsive improvements and feature updates.":
+        "Correzione bug, miglioramenti responsive e aggiornamenti di funzionalità.",
+      "Angular · TypeScript · JavaScript · HTML · SCSS · REST API":
+        "Angular · TypeScript · JavaScript · HTML · SCSS · REST API",
+      "Rental, repair and practical help with inflatable paddle boards.":
+        "Noleggio, riparazione e aiuto pratico con paddle board gonfiabili.",
+      Rental: "Noleggio",
+      "Inflatable SUP boards and basic equipment.":
+        "SUP gonfiabili e attrezzatura di base.",
+      Repair: "Riparazione",
+      "Leaks, punctures, damaged areas and valve issues.":
+        "Perdite, forature, zone danneggiate e problemi alle valvole.",
+      "Setup & maintenance": "Setup e manutenzione",
+      "Board preparation, inspection and general maintenance.":
+        "Preparazione della tavola, controllo e manutenzione generale.",
+      Advice: "Consigli",
+      "Choosing a board, accessories and equipment for beginners.":
+        "Scelta della tavola, accessori e attrezzatura per principianti.",
+      "Available locally by arrangement.": "Disponibile in zona su appuntamento.",
+      "Have a specific problem or improvement in mind?":
+        "Hai un problema specifico o un miglioramento in mente?",
+      "Send me a short description of what you need. I can review the task and tell you whether I can help.":
+        "Inviami una breve descrizione di ciò che ti serve. Posso valutare il compito e dirti se posso aiutarti.",
+      "Contact Me": "Contattami",
+      "Work experience, skills and professional background":
+        "Esperienza lavorativa, competenze e background professionale",
+      Experience: "Esperienza",
+      Skills: "Competenze",
+      "Software Developer with experience in Microsoft Dynamics 365 and Power Platform solutions.":
+        "Sviluppatore software con esperienza in Microsoft Dynamics 365 e soluzioni Power Platform.",
+      "Power Platform and web development for teams and businesses.":
+        "Sviluppo Power Platform e web per team e aziende.",
+      "Power Platform": "Power Platform",
+      "Canvas apps, model-driven apps, Power Automate, Dataverse, plugins and integrations.":
+        "Canvas app, model-driven app, Power Automate, Dataverse, plugin e integrazioni.",
+      "Angular, TypeScript, static sites, REST APIs and modern web interfaces.":
+        "Angular, TypeScript, siti statici, API REST e interfacce web moderne.",
+      "Service details will be expanded here.":
+        "I dettagli dei servizi saranno ampliati qui.",
+      More: "Altro",
+      "Tutorials, tools and developer practices":
+        "Tutorial, strumenti e pratiche di sviluppo",
       "Visual stories, characters and creative experiments":
         "Storie visive, personaggi ed esperimenti creativi",
       "An illustrated story for learning English":
@@ -94,9 +238,39 @@
         "Tavole, kit completi, ritiro gratuito e assistenza guidata nel weekend.",
       "View pricing": "Vedi i prezzi",
       "Book now": "Prenota ora",
+      "Repair services": "Servizi di riparazione",
       "Service highlights": "Punti di forza del servizio",
       "Free pickup": "Ritiro gratuito",
       "Weekend support": "Assistenza nel weekend",
+      "Repair available": "Riparazioni disponibili",
+      Repair: "Riparazione",
+      "Simple SUP repair services": "Semplici servizi di riparazione SUP",
+      "Practical repair for inflatable SUP boards — leaks, valves, seams and small damage.":
+        "Riparazioni pratiche per SUP gonfiabili — perdite, valvole, cuciture e piccoli danni.",
+      "Air leak detection": "Ricerca perdite d’aria",
+      "Find where the board is losing pressure.":
+        "Individuare dove il SUP perde pressione.",
+      "Small puncture and cut repair": "Riparazione di piccole forature e tagli",
+      "Fix local PVC damage.": "Riparare danni locali al PVC.",
+      "Seam and PVC joint repair": "Riparazione di cuciture e giunzioni PVC",
+      "Seal small leaks along edges and seams.":
+        "Sigillare piccole perdite lungo bordi e giunzioni.",
+      "Minor delamination repair": "Riparazione di piccoli scollamenti",
+      "Re-glue areas where the material has started to peel.":
+        "Reincollare le zone dove il materiale ha iniziato a staccarsi.",
+      "Valve service": "Manutenzione della valvola",
+      "Check, clean and tighten the valve when air is leaking.":
+        "Controllare, pulire e serrare la valvola in caso di perdita d’aria.",
+      "SUP valve replacement": "Sostituzione della valvola SUP",
+      "Replace a damaged or faulty valve.":
+        "Sostituire una valvola danneggiata o difettosa.",
+      "D-ring / attachment repair or replacement":
+        "Riparazione o sostituzione di D-ring / attacchi",
+      "Restore small external mounting points.":
+        "Ripristinare piccoli punti di fissaggio esterni.",
+      "Post-repair check": "Controllo dopo la riparazione",
+      "Inflate and verify airtightness after the work.":
+        "Gonfiare e verificare la tenuta dopo l’intervento.",
       "Your equipment": "La tua attrezzatura",
       "What’s in one set": "Cosa include un set",
       "One set includes everything listed below. Life vests are subject to availability.":
@@ -248,14 +422,115 @@
     ru: {
       "Language selector": "Выбор языка",
       "Nikolay logo — letter N": "Логотип Nikolay — буква N",
+      "Nikolay Kartsev": "Николай Карцев",
+      Nikolay: "Николай",
+      Kartsev: "Карцев",
       "Developer · Creator · Explorer": "Разработчик · Автор · Исследователь",
       "Build with purpose. Create with freedom. Explore without limits.":
         "Создавай осмысленно. Твори свободно. Исследуй без границ.",
       Contacts: "Контакты",
-      Projects: "Проекты",
-      "SUP Rental": "Аренда SUP",
-      "Power Platform tutorials, tools and developer practices":
-        "Руководства, инструменты и практики разработки для Power Platform",
+      "Work & Expertise": "Работа и экспертиза",
+      "SUP Services": "Услуги SUP",
+      "Creative Projects": "Творческие проекты",
+      Resume: "Резюме",
+      "What I Can Help With": "Чем могу помочь",
+      "Work experience, skills and background":
+        "Опыт работы, навыки и бэкграунд",
+      "Power Platform solutions and web development":
+        "Power Platform, web-разработка и услуги SUP",
+      "Improve, automate and customize business applications and CRM":
+        "Power Platform, web-разработка и услуги SUP",
+      "Power Platform, web development and SUP services":
+        "Power Platform, web-разработка и услуги SUP",
+      "I work across three practical areas: Microsoft Power Platform development, web development and SUP services.":
+        "Работаю по трём практическим направлениям: разработка Microsoft Power Platform, web-разработка и услуги SUP.",
+      "I help businesses improve, automate and customize their internal applications and CRM processes — from fixing existing issues to adding new functionality and simplifying everyday work.":
+        "Работаю по трём практическим направлениям: разработка Microsoft Power Platform, web-разработка и услуги SUP.",
+      Services: "Услуги",
+      "Power Platform & Dynamics 365": "Power Platform & Dynamics 365",
+      "Development, customization and troubleshooting of existing business applications.":
+        "Разработка, кастомизация и устранение проблем в существующих бизнес-приложениях.",
+      "Custom functionality": "Кастомный функционал",
+      "Plugins, PCF controls, custom buttons and web resources.":
+        "Plugins, PCF-контролы, кастомные кнопки и web resources.",
+      "Forms & business logic": "Формы и бизнес-логика",
+      "JavaScript validation, notifications, conditional behaviour and automation.":
+        "JavaScript-валидация, уведомления, условное поведение и автоматизация.",
+      "Power Automate": "Power Automate",
+      "New flows, troubleshooting and improvements to existing processes.":
+        "Новые flows, troubleshooting и улучшения существующих процессов.",
+      "Dataverse & Model-Driven Apps": "Dataverse & Model-Driven Apps",
+      "Tables, forms, views, relationships and application configuration.":
+        "Таблицы, формы, представления, связи и настройка приложений.",
+      "Access & roles": "Доступы и роли",
+      "Security roles and access configuration inside Dynamics 365.":
+        "Роли безопасности и настройка доступов в Dynamics 365.",
+      "Bug fixing & change requests": "Исправления и change requests",
+      "Fixing existing solutions and implementing new business requirements.":
+        "Исправление существующих решений и реализация новых бизнес-требований.",
+      "Power Apps · Dynamics 365 · Dataverse · Power Automate · C# · JavaScript · TypeScript":
+        "Power Apps · Dynamics 365 · Dataverse · Power Automate · C# · JavaScript · TypeScript",
+      "Web Development": "Web-разработка",
+      "Websites and web applications — from simple responsive pages to Angular-based applications.":
+        "Сайты и веб-приложения — от простых адаптивных страниц до приложений на Angular.",
+      Websites: "Сайты",
+      "Landing pages, portfolio websites and small business websites.":
+        "Лендинги, портфолио и небольшие сайты для бизнеса.",
+      "Responsive development": "Адаптивная разработка",
+      "Layouts optimized for desktop, tablet and mobile.":
+        "Вёрстка для desktop, tablet и mobile.",
+      "Angular applications": "Приложения на Angular",
+      "Interactive web applications built with Angular and TypeScript.":
+        "Интерактивные веб-приложения на Angular и TypeScript.",
+      "API integration": "Интеграция API",
+      "Connecting interfaces with REST APIs and external services.":
+        "Подключение интерфейсов к REST API и внешним сервисам.",
+      "Forms & UI logic": "Формы и UI-логика",
+      "Validation, user interactions and reusable components.":
+        "Валидация, пользовательские взаимодействия и переиспользуемые компоненты.",
+      "Existing projects": "Существующие проекты",
+      "Bug fixing, responsive improvements and feature updates.":
+        "Исправление ошибок, адаптивные улучшения и доработка функций.",
+      "Angular · TypeScript · JavaScript · HTML · SCSS · REST API":
+        "Angular · TypeScript · JavaScript · HTML · SCSS · REST API",
+      "Rental, repair and practical help with inflatable paddle boards.":
+        "Аренда, ремонт и практическая помощь с надувными SUP.",
+      Rental: "Аренда",
+      "Inflatable SUP boards and basic equipment.":
+        "Надувные SUP и базовое снаряжение.",
+      Repair: "Ремонт",
+      "Leaks, punctures, damaged areas and valve issues.":
+        "Протечки, проколы, повреждения и проблемы с клапанами.",
+      "Setup & maintenance": "Подготовка и обслуживание",
+      "Board preparation, inspection and general maintenance.":
+        "Подготовка доски, осмотр и общее обслуживание.",
+      Advice: "Консультации",
+      "Choosing a board, accessories and equipment for beginners.":
+        "Выбор доски, аксессуаров и снаряжения для начинающих.",
+      "Available locally by arrangement.": "Доступно локально по договорённости.",
+      "Have a specific problem or improvement in mind?":
+        "Есть конкретная задача или идея улучшения?",
+      "Send me a short description of what you need. I can review the task and tell you whether I can help.":
+        "Отправьте краткое описание того, что вам нужно. Я посмотрю задачу и скажу, смогу ли помочь.",
+      "Contact Me": "Связаться со мной",
+      "Work experience, skills and professional background":
+        "Опыт работы, навыки и профессиональный бэкграунд",
+      Experience: "Опыт",
+      Skills: "Навыки",
+      "Software Developer with experience in Microsoft Dynamics 365 and Power Platform solutions.":
+        "Разработчик ПО с опытом работы с Microsoft Dynamics 365 и решениями Power Platform.",
+      "Power Platform and web development for teams and businesses.":
+        "Power Platform и web-разработка для команд и бизнеса.",
+      "Power Platform": "Power Platform",
+      "Canvas apps, model-driven apps, Power Automate, Dataverse, plugins and integrations.":
+        "Canvas-приложения, model-driven apps, Power Automate, Dataverse, плагины и интеграции.",
+      "Angular, TypeScript, static sites, REST APIs and modern web interfaces.":
+        "Angular, TypeScript, статические сайты, REST API и современные web-интерфейсы.",
+      "Service details will be expanded here.":
+        "Детали услуг будут дополнены здесь.",
+      More: "Ещё",
+      "Tutorials, tools and developer practices":
+        "Руководства, инструменты и практики разработки",
       "Visual stories, characters and creative experiments":
         "Визуальные истории, персонажи и творческие эксперименты",
       "An illustrated story for learning English":
@@ -284,9 +559,39 @@
         "Доски, полные комплекты, бесплатный самовывоз и сопровождение в выходные.",
       "View pricing": "Смотреть цены",
       "Book now": "Забронировать",
+      "Repair services": "Услуги ремонта",
       "Service highlights": "Преимущества услуги",
       "Free pickup": "Бесплатный самовывоз",
       "Weekend support": "Поддержка в выходные",
+      "Repair available": "Доступен ремонт",
+      Repair: "Ремонт",
+      "Simple SUP repair services": "Простые услуги по ремонту SUP",
+      "Practical repair for inflatable SUP boards — leaks, valves, seams and small damage.":
+        "Практический ремонт надувных SUP — утечки, клапаны, швы и небольшие повреждения.",
+      "Air leak detection": "Поиск утечки воздуха",
+      "Find where the board is losing pressure.":
+        "Диагностика места, откуда SUP теряет давление.",
+      "Small puncture and cut repair": "Ремонт небольших проколов и порезов",
+      "Fix local PVC damage.": "Устранение локальных повреждений PVC.",
+      "Seam and PVC joint repair": "Ремонт швов и мест соединения PVC",
+      "Seal small leaks along edges and seams.":
+        "Устранение небольших утечек по краям и стыкам материала.",
+      "Minor delamination repair": "Ремонт небольших отслоений",
+      "Re-glue areas where the material has started to peel.":
+        "Повторная проклейка участков, где материал начал отходить.",
+      "Valve service": "Обслуживание клапана",
+      "Check, clean and tighten the valve when air is leaking.":
+        "Проверка, очистка и подтяжка клапана при утечке воздуха.",
+      "SUP valve replacement": "Замена клапана SUP",
+      "Replace a damaged or faulty valve.":
+        "Замена повреждённого или неисправного клапана.",
+      "D-ring / attachment repair or replacement":
+        "Замена или ремонт D-ring / креплений",
+      "Restore small external mounting points.":
+        "Восстановление небольших внешних крепёжных элементов.",
+      "Post-repair check": "Проверка SUP после ремонта",
+      "Inflate and verify airtightness after the work.":
+        "Накачивание и контроль герметичности после выполненных работ.",
       "Your equipment": "Ваше снаряжение",
       "What’s in one set": "Что входит в комплект",
       "One set includes everything listed below. Life vests are subject to availability.":
@@ -434,14 +739,115 @@
     uk: {
       "Language selector": "Вибір мови",
       "Nikolay logo — letter N": "Логотип Nikolay — літера N",
+      "Nikolay Kartsev": "Микола Карцев",
+      Nikolay: "Микола",
+      Kartsev: "Карцев",
       "Developer · Creator · Explorer": "Розробник · Автор · Дослідник",
       "Build with purpose. Create with freedom. Explore without limits.":
         "Створюй зі змістом. Твори вільно. Досліджуй без меж.",
       Contacts: "Контакти",
-      Projects: "Проєкти",
-      "SUP Rental": "Оренда SUP",
-      "Power Platform tutorials, tools and developer practices":
-        "Посібники, інструменти та практики розробки для Power Platform",
+      "Work & Expertise": "Робота та експертиза",
+      "SUP Services": "Послуги SUP",
+      "Creative Projects": "Творчі проєкти",
+      Resume: "Резюме",
+      "What I Can Help With": "Чим можу допомогти",
+      "Work experience, skills and background":
+        "Досвід роботи, навички та бекграунд",
+      "Power Platform solutions and web development":
+        "Power Platform, web-розробка та послуги SUP",
+      "Improve, automate and customize business applications and CRM":
+        "Power Platform, web-розробка та послуги SUP",
+      "Power Platform, web development and SUP services":
+        "Power Platform, web-розробка та послуги SUP",
+      "I work across three practical areas: Microsoft Power Platform development, web development and SUP services.":
+        "Працюю за трьома практичними напрямами: розробка Microsoft Power Platform, web-розробка та послуги SUP.",
+      "I help businesses improve, automate and customize their internal applications and CRM processes — from fixing existing issues to adding new functionality and simplifying everyday work.":
+        "Працюю за трьома практичними напрямами: розробка Microsoft Power Platform, web-розробка та послуги SUP.",
+      Services: "Послуги",
+      "Power Platform & Dynamics 365": "Power Platform & Dynamics 365",
+      "Development, customization and troubleshooting of existing business applications.":
+        "Розробка, кастомізація та усунення проблем у наявних бізнес-додатках.",
+      "Custom functionality": "Кастомний функціонал",
+      "Plugins, PCF controls, custom buttons and web resources.":
+        "Plugins, PCF-контроли, кастомні кнопки та web resources.",
+      "Forms & business logic": "Форми та бізнес-логіка",
+      "JavaScript validation, notifications, conditional behaviour and automation.":
+        "JavaScript-валідація, сповіщення, умовна поведінка та автоматизація.",
+      "Power Automate": "Power Automate",
+      "New flows, troubleshooting and improvements to existing processes.":
+        "Нові flows, troubleshooting і покращення наявних процесів.",
+      "Dataverse & Model-Driven Apps": "Dataverse & Model-Driven Apps",
+      "Tables, forms, views, relationships and application configuration.":
+        "Таблиці, форми, представлення, зв’язки та налаштування додатків.",
+      "Access & roles": "Доступи та ролі",
+      "Security roles and access configuration inside Dynamics 365.":
+        "Ролі безпеки та налаштування доступів у Dynamics 365.",
+      "Bug fixing & change requests": "Виправлення та change requests",
+      "Fixing existing solutions and implementing new business requirements.":
+        "Виправлення наявних рішень і реалізація нових бізнес-вимог.",
+      "Power Apps · Dynamics 365 · Dataverse · Power Automate · C# · JavaScript · TypeScript":
+        "Power Apps · Dynamics 365 · Dataverse · Power Automate · C# · JavaScript · TypeScript",
+      "Web Development": "Web-розробка",
+      "Websites and web applications — from simple responsive pages to Angular-based applications.":
+        "Сайти та веб-додатки — від простих адаптивних сторінок до додатків на Angular.",
+      Websites: "Сайти",
+      "Landing pages, portfolio websites and small business websites.":
+        "Лендінги, портфоліо та невеликі сайти для бізнесу.",
+      "Responsive development": "Адаптивна розробка",
+      "Layouts optimized for desktop, tablet and mobile.":
+        "Верстка для desktop, tablet і mobile.",
+      "Angular applications": "Додатки на Angular",
+      "Interactive web applications built with Angular and TypeScript.":
+        "Інтерактивні веб-додатки на Angular і TypeScript.",
+      "API integration": "Інтеграція API",
+      "Connecting interfaces with REST APIs and external services.":
+        "Підключення інтерфейсів до REST API та зовнішніх сервісів.",
+      "Forms & UI logic": "Форми та UI-логіка",
+      "Validation, user interactions and reusable components.":
+        "Валідація, взаємодії користувача та повторно використовувані компоненти.",
+      "Existing projects": "Наявні проєкти",
+      "Bug fixing, responsive improvements and feature updates.":
+        "Виправлення помилок, адаптивні покращення та доопрацювання функцій.",
+      "Angular · TypeScript · JavaScript · HTML · SCSS · REST API":
+        "Angular · TypeScript · JavaScript · HTML · SCSS · REST API",
+      "Rental, repair and practical help with inflatable paddle boards.":
+        "Оренда, ремонт і практична допомога з надувними SUP.",
+      Rental: "Оренда",
+      "Inflatable SUP boards and basic equipment.":
+        "Надувні SUP і базове спорядження.",
+      Repair: "Ремонт",
+      "Leaks, punctures, damaged areas and valve issues.":
+        "Протікання, проколи, пошкодження та проблеми з клапанами.",
+      "Setup & maintenance": "Підготовка та обслуговування",
+      "Board preparation, inspection and general maintenance.":
+        "Підготовка дошки, огляд і загальне обслуговування.",
+      Advice: "Консультації",
+      "Choosing a board, accessories and equipment for beginners.":
+        "Вибір дошки, аксесуарів і спорядження для початківців.",
+      "Available locally by arrangement.": "Доступно локально за домовленістю.",
+      "Have a specific problem or improvement in mind?":
+        "Є конкретна задача чи ідея покращення?",
+      "Send me a short description of what you need. I can review the task and tell you whether I can help.":
+        "Надішліть короткий опис того, що вам потрібно. Я перегляну задачу і скажу, чи зможу допомогти.",
+      "Contact Me": "Зв’язатися зі мною",
+      "Work experience, skills and professional background":
+        "Досвід роботи, навички та професійний бекграунд",
+      Experience: "Досвід",
+      Skills: "Навички",
+      "Software Developer with experience in Microsoft Dynamics 365 and Power Platform solutions.":
+        "Розробник ПЗ з досвідом роботи з Microsoft Dynamics 365 і рішеннями Power Platform.",
+      "Power Platform and web development for teams and businesses.":
+        "Power Platform і web-розробка для команд і бізнесу.",
+      "Power Platform": "Power Platform",
+      "Canvas apps, model-driven apps, Power Automate, Dataverse, plugins and integrations.":
+        "Canvas-додатки, model-driven apps, Power Automate, Dataverse, плагіни та інтеграції.",
+      "Angular, TypeScript, static sites, REST APIs and modern web interfaces.":
+        "Angular, TypeScript, статичні сайти, REST API та сучасні web-інтерфейси.",
+      "Service details will be expanded here.":
+        "Деталі послуг будуть доповнені тут.",
+      More: "Ще",
+      "Tutorials, tools and developer practices":
+        "Посібники, інструменти та практики розробки",
       "Visual stories, characters and creative experiments":
         "Візуальні історії, персонажі та творчі експерименти",
       "An illustrated story for learning English":
@@ -470,9 +876,39 @@
         "Дошки, повні комплекти, безкоштовний самовивіз і супровід у вихідні.",
       "View pricing": "Переглянути ціни",
       "Book now": "Забронювати",
+      "Repair services": "Послуги ремонту",
       "Service highlights": "Переваги послуги",
       "Free pickup": "Безкоштовний самовивіз",
       "Weekend support": "Підтримка у вихідні",
+      "Repair available": "Доступний ремонт",
+      Repair: "Ремонт",
+      "Simple SUP repair services": "Прості послуги з ремонту SUP",
+      "Practical repair for inflatable SUP boards — leaks, valves, seams and small damage.":
+        "Практичний ремонт надувних SUP — протікання, клапани, шви та невеликі пошкодження.",
+      "Air leak detection": "Пошук витоку повітря",
+      "Find where the board is losing pressure.":
+        "Діагностика місця, звідки SUP втрачає тиск.",
+      "Small puncture and cut repair": "Ремонт невеликих проколів і порізів",
+      "Fix local PVC damage.": "Усунення локальних пошкоджень PVC.",
+      "Seam and PVC joint repair": "Ремонт швів і місць з’єднання PVC",
+      "Seal small leaks along edges and seams.":
+        "Усунення невеликих витоків по краях і стиках матеріалу.",
+      "Minor delamination repair": "Ремонт невеликих відшарувань",
+      "Re-glue areas where the material has started to peel.":
+        "Повторне проклеювання ділянок, де матеріал почав відходити.",
+      "Valve service": "Обслуговування клапана",
+      "Check, clean and tighten the valve when air is leaking.":
+        "Перевірка, очищення та підтяжка клапана при витоку повітря.",
+      "SUP valve replacement": "Заміна клапана SUP",
+      "Replace a damaged or faulty valve.":
+        "Заміна пошкодженого або несправного клапана.",
+      "D-ring / attachment repair or replacement":
+        "Заміна або ремонт D-ring / кріплень",
+      "Restore small external mounting points.":
+        "Відновлення невеликих зовнішніх кріпильних елементів.",
+      "Post-repair check": "Перевірка SUP після ремонту",
+      "Inflate and verify airtightness after the work.":
+        "Накачування та контроль герметичності після виконаних робіт.",
       "Your equipment": "Ваше спорядження",
       "What’s in one set": "Що входить до комплекту",
       "One set includes everything listed below. Life vests are subject to availability.":

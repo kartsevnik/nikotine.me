@@ -5,8 +5,12 @@
   if (!config) return;
 
   const contactsEl = document.getElementById("contacts-list");
-  const projectsEl = document.getElementById("projects-list");
-  const supRentalEl = document.getElementById("sup-rental-list");
+  const workEl = document.getElementById("work-list");
+  const supServicesEl = document.getElementById("sup-services-list");
+  const creativeEl = document.getElementById("creative-list");
+
+  const cardArrowSvg =
+    '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M10 7h7v7"/></svg>';
 
   function hasUrl(url) {
     return typeof url === "string" && url.trim().length > 0;
@@ -79,11 +83,12 @@
 
     const fragment = document.createDocumentFragment();
 
-    config.contacts.forEach(function (contact) {
+    config.contacts.forEach(function (contact, index) {
       const isActive = hasUrl(contact.url);
       const el = document.createElement(isActive ? "a" : "div");
       el.className = "contact-btn" + (isActive ? "" : " contact-btn--disabled");
       el.dataset.contactId = contact.id;
+      el.style.setProperty("--delay", String(0.05 * index) + "s");
       el.setAttribute("aria-label", contact.label);
 
       if (isActive) {
@@ -95,6 +100,9 @@
         el.title = "Link coming soon";
       }
 
+      const media = document.createElement("div");
+      media.className = "contact-btn__media";
+
       const img = document.createElement("img");
       img.src = contact.icon;
       img.alt = "";
@@ -103,13 +111,24 @@
       img.loading = "lazy";
       img.decoding = "async";
       attachImageFallback(img, contact.label, "contact-btn__placeholder");
+      media.appendChild(img);
 
-      const span = document.createElement("span");
-      span.className = "contact-btn__label";
-      span.textContent = contact.label;
+      const body = document.createElement("div");
+      body.className = "contact-btn__body";
 
-      el.appendChild(img);
-      el.appendChild(span);
+      const label = document.createElement("span");
+      label.className = "contact-btn__label";
+      label.textContent = contact.label;
+      body.appendChild(label);
+
+      const arrow = document.createElement("span");
+      arrow.className = "contact-btn__arrow";
+      arrow.setAttribute("aria-hidden", "true");
+      arrow.innerHTML = cardArrowSvg;
+
+      el.appendChild(media);
+      el.appendChild(body);
+      el.appendChild(arrow);
       fragment.appendChild(el);
     });
 
@@ -205,8 +224,7 @@
       const arrow = document.createElement("span");
       arrow.className = "project-card__arrow";
       arrow.setAttribute("aria-hidden", "true");
-      arrow.innerHTML =
-        '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M10 7h7v7"/></svg>';
+      arrow.innerHTML = cardArrowSvg;
 
       card.appendChild(media);
       card.appendChild(body);
@@ -232,11 +250,15 @@
         return item.id === element.dataset.contactId;
       });
       if (!contact) return;
-      element.setAttribute("aria-label", contact.label);
+      element.setAttribute("aria-label", i18n.t(contact.label));
       if (!hasUrl(contact.url)) element.title = i18n.t("Link coming soon");
     });
 
-    const projects = [...config.projects, ...config.supRental];
+    const projects = [
+      ...(config.work || []),
+      ...(config.supServices || []),
+      ...(config.creativeProjects || []),
+    ];
     document.querySelectorAll("[data-project-id]").forEach(function (card) {
       const project = projects.find(function (item) {
         return item.id === card.dataset.projectId;
@@ -263,8 +285,9 @@
   }
 
   renderContacts();
-  renderProjectList(projectsEl, config.projects);
-  renderProjectList(supRentalEl, config.supRental);
+  renderProjectList(workEl, config.work);
+  renderProjectList(supServicesEl, config.supServices);
+  renderProjectList(creativeEl, config.creativeProjects);
   updateAccessibility();
   window.addEventListener("site:languagechange", updateAccessibility);
   revealOnLoad();

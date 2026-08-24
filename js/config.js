@@ -3,7 +3,7 @@
  * Leave a URL empty ("") to treat the item as unavailable / coming soon.
  */
 window.siteConfig = {
-  name: "Nikolay",
+  name: "Nikolay Kartsev",
   tagline: "Developer · Creator · Explorer",
   slogan: [
     "Build with purpose.",
@@ -13,7 +13,7 @@ window.siteConfig = {
   meta: {
     title: "Nikolay — Developer, Creator & Explorer",
     description:
-      "Personal digital card of Nikolay — developer, creator and explorer. Contacts, projects and creative work.",
+      "Professional profile of Nikolay — Power Platform and web developer. Resume, services, contacts and projects.",
   },
 
   contacts: [
@@ -35,38 +35,43 @@ window.siteConfig = {
       url: "https://www.instagram.com/nikotine.me/", // INSTAGRAM_URL
       icon: "assets/contacts/instagram.png",
     },
+    {
+      id: "linkedin",
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/in/mykola-kartsev-317073b2/", // LINKEDIN_URL
+      icon: "assets/contacts/linkedin.png",
+    },
   ],
 
-  projects: [
+  work: [
+    {
+      id: "resume",
+      title: "Resume",
+      description: "Work experience, skills and background",
+      url: "resume.html",
+      image: "assets/work/resume.png",
+      comingSoon: false,
+    },
+    {
+      id: "services",
+      title: "What I Can Help With",
+      description: "Power Platform, web development and SUP services",
+      url: "services.html",
+      image: "assets/work/services.png",
+      comingSoon: false,
+    },
     {
       id: "power-platform-lab",
       title: "Power Platform Lab",
-      description: "Power Platform tutorials, tools and developer practices",
+      description: "Tutorials, tools and developer practices",
       url: "https://www.youtube.com/@PowerPlatformLaba", // POWER_PLATFORM_LAB_URL
       image: "assets/projects/power-platform-lab.png",
       destination: "YouTube",
       comingSoon: false,
     },
-    {
-      id: "animatra",
-      title: "Animatra",
-      description: "Visual stories, characters and creative experiments",
-      url: "https://www.youtube.com/@animatra_official", // ANIMATRA_URL
-      image: "assets/projects/animatra.png",
-      destination: "YouTube",
-      comingSoon: false,
-    },
-    {
-      id: "jn",
-      title: "J&N — A story that teaches!",
-      description: "An illustrated story for learning English",
-      url: "", // JN_PROJECT_URL — set when published
-      image: "assets/projects/jn.png",
-      comingSoon: true,
-    },
   ],
 
-  supRental: [
+  supServices: [
     {
       id: "price-and-service",
       title: "Price and service",
@@ -83,6 +88,26 @@ window.siteConfig = {
       image: "assets/sup/geo_ico.png",
       destination: "Facebook",
       comingSoon: false,
+    },
+  ],
+
+  creativeProjects: [
+    {
+      id: "animatra",
+      title: "Animatra",
+      description: "Visual stories, characters and creative experiments",
+      url: "https://www.youtube.com/@animatra_official", // ANIMATRA_URL
+      image: "assets/projects/animatra.png",
+      destination: "YouTube",
+      comingSoon: false,
+    },
+    {
+      id: "jn",
+      title: "J&N — A story that teaches!",
+      description: "An illustrated story for learning English",
+      url: "", // JN_PROJECT_URL — set when published
+      image: "assets/projects/jn.png",
+      comingSoon: true,
     },
   ],
 };

@@ -1,6 +1,6 @@
 # nikotine.me — digital card
 
-Personal one-page site for **Nikolay** (Developer · Creator · Explorer).  
+Personal site for **Nikolay** (Developer · Creator · Explorer).  
 Static HTML / CSS / JS — ready for GitHub Pages, Netlify, Vercel or any static host.
 
 ## Local preview
@@ -25,9 +25,10 @@ Opening `index.html` directly in the browser also works (no build step).
 ## Languages
 
 The site supports Italian (`it`), English (`en`), Russian (`ru`) and Ukrainian
-(`uk`). The first visit uses the first supported language from
-`navigator.languages`; unsupported browser languages fall back to English.
-Manual selection is stored under `siteLanguage` in `localStorage`.
+(`uk`, shown as **UA** in the language selector). The first visit uses the first
+supported language from `navigator.languages`; unsupported browser languages
+fall back to English. Manual selection is stored under `siteLanguage` in
+`localStorage`.
 
 All translations and localized metadata are stored in:
 
@@ -42,13 +43,13 @@ object and change its translated value.
 To add another language:
 
 1. Add its ISO language code to `supportedLanguages` in `js/i18n.js`.
-2. Add the same code to the early language-detection snippet in both HTML files.
+2. Add the same code to the early language-detection snippet in all HTML files.
 3. Add a translation object and localized metadata in `js/i18n.js`.
-4. Add a `data-language` button to both language menus.
+4. Add a `data-language` button to all language menus.
 5. Add the language to the detection test cases.
 
 To change the fallback language, replace the final `"en"` returned by the
-detection logic in `js/i18n.js` and both early HTML snippets. Keep the HTML
+detection logic in `js/i18n.js` and all early HTML snippets. Keep the HTML
 fallback text synchronized with that language to avoid a visible language
 flash.
 
@@ -67,6 +68,7 @@ contacts: [
   { id: "whatsapp",  url: "", /* WHATSAPP_URL */  ... },
   { id: "telegram",  url: "", /* TELEGRAM_URL */  ... },
   { id: "instagram", url: "", /* INSTAGRAM_URL */ ... },
+  { id: "linkedin",  url: "", /* LINKEDIN_URL */  ... },
 ]
 ```
 
@@ -76,20 +78,34 @@ Paste full URLs, for example:
 url: "https://wa.me/39XXXXXXXXXX"
 url: "https://t.me/username"
 url: "https://instagram.com/username"
+url: "https://www.linkedin.com/in/username/"
 ```
 
-### Projects
+### Work & Expertise
 
 ```js
-projects: [
+work: [
+  { id: "resume",             url: "resume.html", ... },
+  { id: "services",           url: "services.html", ... },
   { id: "power-platform-lab", url: "", /* POWER_PLATFORM_LAB_URL */ ... },
-  { id: "animatra",           url: "", /* ANIMATRA_URL */ ... },
-  { id: "jn",                 url: "", /* JN_PROJECT_URL */, comingSoon: true },
 ]
+```
 
-supRental: [
-  { id: "price-and-service",  url: "sup-rental.html", /* SUP_PRICE_URL */ ... },
-  { id: "facebook-group",     url: "", /* FACEBOOK_GROUP_URL */ ... },
+### SUP Services
+
+```js
+supServices: [
+  { id: "price-and-service", url: "sup-rental.html", /* SUP_PRICE_URL */ ... },
+  { id: "facebook-group",    url: "", /* FACEBOOK_GROUP_URL */ ... },
+]
+```
+
+### Creative Projects
+
+```js
+creativeProjects: [
+  { id: "animatra", url: "", /* ANIMATRA_URL */ ... },
+  { id: "jn",       url: "", /* JN_PROJECT_URL */, comingSoon: true },
 ]
 ```
 
@@ -102,19 +118,36 @@ supRental: [
 
 | Asset | Path |
 |--------|------|
-| Site logo / favicon source | `assets/logo.png` |
+| Site logo / favicon source | `assets/logo.png` (source: `img/brand/logo-source.png`) |
 | Favicon | `assets/favicon.png` |
 | Apple touch icon | `assets/apple-touch-icon.png` |
-| Power Platform Lab | `assets/projects/power-platform-lab.png` |
-| Animatra | `assets/projects/animatra.png` |
-| J&N | `assets/projects/jn.png` |
-| Price and service | `assets/sup/price_ico.png` |
-| Beaches & SUP Spots | `assets/sup/geo_ico.png` |
-| Contact icons | `assets/contacts/*.png` |
+| Resume | `assets/work/resume.png` (source: `img/home/work-resume.png`) |
+| What I Can Help With | `assets/work/services.png` (source: `img/home/work-services.png`) |
+| Power Platform Lab | `assets/projects/power-platform-lab.png` (source: `img/home/project-power-platform-lab.png`) |
+| Animatra | `assets/projects/animatra.png` (source: `img/home/project-animatra.png`) |
+| J&N | `assets/projects/jn.png` (source: `img/home/project-jn.png`) |
+| Price and service | `assets/sup/price_ico.png` (source: `img/home/sup-price.png`) |
+| Beaches & SUP Spots | `assets/sup/geo_ico.png` (source: `img/home/sup-geo.png`) |
+| Contact icons | `assets/contacts/*.png` (sources: `img/home/contact-*.png`) |
 
 Prefer square PNGs (~256×256). If an image fails to load, the card shows a letter placeholder.
 
-Original source files are kept in `img/` for reference; the site uses optimized copies under `assets/`.
+- **`assets/`** — optimized images used by the live site (home page cards, contacts, brand).
+- **`img/`** — sources and resume-page media, grouped by page/section:
+
+```text
+img/
+  brand/                 # logo source
+  home/                  # sources for home cards / contacts / SUP
+  resume/
+    it-development/      # career timeline icons
+    education/           # education timeline icons
+    languages/           # language card illustrations
+    portfolio/
+      web/               # web project thumbnails
+      angular-*/         # gallery screenshots (+ web/*.webp)
+      pcf-*/             # PCF gallery screenshots (+ web/*.webp)
+```
 
 ## Publish
 
@@ -168,8 +201,11 @@ Optional: set `og:url` in `index.html` if you want a different canonical social 
 
 ```text
 index.html
+resume.html
+services.html
 sup-rental.html
 css/styles.css
+css/content-page.css
 css/sup-rental.css
 js/config.js
 js/main.js
@@ -180,9 +216,17 @@ assets/
   favicon.png
   apple-touch-icon.png
   contacts/
+  work/
   projects/
   sup/
-img/          # original source images
+img/
+  brand/
+  home/
+  resume/
+    it-development/
+    education/
+    languages/
+    portfolio/
 README.md
 ```
 
