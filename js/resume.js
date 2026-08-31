@@ -18,6 +18,9 @@
   const DEFAULT_TAB_ID = "it-experience";
   let activeTabId = DEFAULT_TAB_ID;
 
+  const YOUTUBE_BADGE_ICON =
+    '<svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg>';
+
   function escapeHtml(value) {
     return String(value || "")
       .replace(/&/g, "&amp;")
@@ -80,16 +83,34 @@
   function renderHeroExtras(content) {
     if (!heroExtras) return;
     const github = content.github;
+    const youtube = content.youtube;
+    const hasBadges = github?.url || youtube?.url;
     let html = '<div class="resume-hero-extras">';
 
-    if (github?.url) {
+    if (hasBadges) {
       html += '<div class="resume-hero-badges">';
-      html +=
-        '<a class="resume-badge resume-badge--link" href="' +
-        escapeHtml(github.url) +
-        '" target="_blank" rel="noopener noreferrer">' +
-        escapeHtml(github.label || "GitHub") +
-        "</a>";
+      if (github?.url) {
+        html +=
+          '<a class="resume-badge resume-badge--link" href="' +
+          escapeHtml(github.url) +
+          '" target="_blank" rel="noopener noreferrer">' +
+          escapeHtml(github.label || "GitHub") +
+          "</a>";
+      }
+      if (youtube?.url) {
+        html +=
+          '<a class="resume-badge resume-badge--link resume-badge--youtube" href="' +
+          escapeHtml(youtube.url) +
+          '" target="_blank" rel="noopener noreferrer" aria-label="' +
+          escapeHtml(youtube.ariaLabel || youtube.label || "YouTube") +
+          '">' +
+          '<span class="resume-badge__icon">' +
+          YOUTUBE_BADGE_ICON +
+          "</span>" +
+          '<span class="resume-badge__text">' +
+          escapeHtml(youtube.label || "YouTube") +
+          "</span></a>";
+      }
       html += "</div>";
     }
 

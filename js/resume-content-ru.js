@@ -23,6 +23,11 @@
       url: "https://github.com/kartsevnik/",
       label: "GitHub",
     },
+    youtube: {
+      url: "https://www.youtube.com/@PowerPlatformLaba",
+      label: "Power Platform Lab",
+      ariaLabel: "Power Platform Lab на YouTube",
+    },
     labels: {
       credentialId: "Credential ID:",
       link: "Ссылка:",

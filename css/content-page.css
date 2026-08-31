@@ -513,6 +513,29 @@ body {
   outline: none;
 }
 
+.resume-badge--youtube {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-color: rgba(201, 80, 80, 0.28);
+  background: rgba(180, 40, 40, 0.12);
+  color: #e8b4b4;
+}
+
+.resume-badge--youtube:hover,
+.resume-badge--youtube:focus-visible {
+  border-color: rgba(201, 80, 80, 0.45);
+  background: rgba(180, 40, 40, 0.18);
+  color: #f0c8c8;
+}
+
+.resume-badge__icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  color: #e25555;
+  line-height: 0;
+}
+
 .resume-root {
   padding-top: 0;
 }
