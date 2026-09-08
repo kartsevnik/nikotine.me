@@ -3,3 +3,5 @@ Thumbs.db
 node_modules/
 package-lock.json
 *.log
+scripts/fonts/
+scripts/pdf-smoke/

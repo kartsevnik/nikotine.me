@@ -500,6 +500,30 @@ body {
   gap: 0.45rem;
 }
 
+.resume-badge--pdf {
+  cursor: pointer;
+  border-color: rgba(201, 162, 39, 0.55);
+  background: linear-gradient(135deg, #f0d77f, #d5ae35);
+  color: #0b0c0f;
+  font-weight: 600;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.resume-badge--pdf:hover,
+.resume-badge--pdf:focus-visible {
+  border-color: rgba(228, 199, 107, 0.85);
+  background: linear-gradient(135deg, #f5e09a, #e4c76b);
+  color: #0b0c0f;
+  outline: none;
+}
+
+.resume-badge--pdf:disabled,
+.resume-badge--pdf.is-busy {
+  cursor: wait;
+  opacity: 0.72;
+}
+
 .resume-badge--link {
   text-decoration: none;
   transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;

@@ -43,6 +43,10 @@
       tableRole: "Role",
       tableDetails: "Details",
       tabsAriaLabel: "Experience and background",
+      downloadPdf: "Download PDF",
+      downloadPdfBusy: "Preparing PDF…",
+      downloadPdfError: "Could not generate the PDF. Please try again.",
+      pdfSummary: "Summary",
     },
     skills: {
       title: "Core Skills",

@@ -3,9 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "optimize:portfolio-images": "node scripts/optimize-portfolio-images.mjs"
+    "optimize:portfolio-images": "node scripts/optimize-portfolio-images.mjs",
+    "build:resume-pdf-fonts": "node scripts/build-resume-pdf-fonts.mjs"
   },
   "devDependencies": {
+    "pdfmake": "^0.2.20",
     "sharp": "^0.34.3"
   }
 }

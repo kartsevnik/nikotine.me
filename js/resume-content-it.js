@@ -43,6 +43,10 @@
       tableRole: "Ruolo",
       tableDetails: "Dettagli",
       tabsAriaLabel: "Esperienza e background",
+      downloadPdf: "Scarica PDF",
+      downloadPdfBusy: "Preparazione PDF…",
+      downloadPdfError: "Impossibile generare il PDF. Riprova.",
+      pdfSummary: "Profilo",
     },
     skills: {
       title: "Competenze principali",

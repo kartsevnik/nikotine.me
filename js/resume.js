@@ -85,10 +85,23 @@
     const github = content.github;
     const youtube = content.youtube;
     const hasBadges = github?.url || youtube?.url;
+    const downloadLabel =
+      content.labels?.downloadPdf || "Download PDF";
+    const downloadBusyLabel =
+      content.labels?.downloadPdfBusy || "Preparing PDF…";
     let html = '<div class="resume-hero-extras">';
 
+    html += '<div class="resume-hero-badges">';
+    html +=
+      '<button type="button" class="resume-badge resume-badge--pdf" data-resume-download-pdf' +
+      ' data-label-idle="' +
+      escapeHtml(downloadLabel) +
+      '" data-label-busy="' +
+      escapeHtml(downloadBusyLabel) +
+      '">' +
+      escapeHtml(downloadLabel) +
+      "</button>";
     if (hasBadges) {
-      html += '<div class="resume-hero-badges">';
       if (github?.url) {
         html +=
           '<a class="resume-badge resume-badge--link" href="' +
@@ -111,8 +124,8 @@
           escapeHtml(youtube.label || "YouTube") +
           "</span></a>";
       }
-      html += "</div>";
     }
+    html += "</div>";
 
     if (content.heroSoftSkills?.length) {
       html += '<div class="resume-soft-chips" aria-label="Soft skills">';
@@ -125,6 +138,21 @@
 
     html += "</div>";
     heroExtras.innerHTML = html;
+
+    const downloadBtn = heroExtras.querySelector("[data-resume-download-pdf]");
+    if (downloadBtn) {
+      downloadBtn.addEventListener("click", function () {
+        if (!window.resumePdf?.download) return;
+        const idle = downloadBtn.getAttribute("data-label-idle") || downloadLabel;
+        const busy =
+          downloadBtn.getAttribute("data-label-busy") || downloadBusyLabel;
+        downloadBtn.textContent = busy;
+        window.resumePdf.download({ button: downloadBtn }).finally(function () {
+          downloadBtn.textContent =
+            downloadBtn.getAttribute("data-label-idle") || idle;
+        });
+      });
+    }
   }
 
   function renderSkills(content) {

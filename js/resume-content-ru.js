@@ -43,6 +43,10 @@
       tableRole: "Роль",
       tableDetails: "Детали",
       tabsAriaLabel: "Опыт и профессиональный бэкграунд",
+      downloadPdf: "Скачать PDF",
+      downloadPdfBusy: "Готовим PDF…",
+      downloadPdfError: "Не удалось создать PDF. Попробуйте ещё раз.",
+      pdfSummary: "О себе",
     },
     skills: {
       title: "Ключевые навыки",

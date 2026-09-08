@@ -43,6 +43,10 @@
       tableRole: "Роль",
       tableDetails: "Деталі",
       tabsAriaLabel: "Досвід і професійний бекграунд",
+      downloadPdf: "Завантажити PDF",
+      downloadPdfBusy: "Готуємо PDF…",
+      downloadPdfError: "Не вдалося створити PDF. Спробуйте ще раз.",
+      pdfSummary: "Про себе",
     },
     skills: {
       title: "Ключові навички",
