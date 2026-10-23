@@ -39,8 +39,8 @@
         "Le persone dietro le storie, i disegni e il design didattico.",
       "Creator, Writer & Illustrator": "Creatore, scrittore e illustratore",
       "Editor & Educational Contributor": "Editor e contributo didattico",
-      "A software developer with a passion for storytelling, visual creativity, and learning new things. Mykola created J&N Education to explore a simple idea: what if learning English could feel more like reading a funny adventure than studying a textbook?":
-        "Uno sviluppatore software con la passione per lo storytelling, la creatività visiva e l’apprendimento. Mykola ha creato J&N Education per esplorare un’idea semplice: e se imparare l’inglese potesse sembrare più leggere un’avventura divertente che studiare un libro di testo?",
+      "A software developer with a passion for storytelling, visual creativity, and learning new things. Nikolai created J&N Education to explore a simple idea: what if learning English could feel more like reading a funny adventure than studying a textbook?":
+        "Uno sviluppatore software con la passione per lo storytelling, la creatività visiva e l’apprendimento. Nikolai ha creato J&N Education per esplorare un’idea semplice: e se imparare l’inglese potesse sembrare più leggere un’avventura divertente che studiare un libro di testo?",
       "He brings the characters, stories, illustrations, and visual world of the comics to life, combining creativity with modern digital tools.":
         "Dà vita a personaggi, storie, illustrazioni e al mondo visivo dei fumetti, unendo creatività e strumenti digitali moderni.",
       "Jade helps shape the educational side of the project, bringing a language teacher's perspective to the stories, dialogues, grammar explanations, and learning activities.":
@@ -53,8 +53,8 @@
         "Sfoglia i numeri pubblicati e apri quello adatto al tuo livello.",
       "© 2026 J&N Education. All rights reserved.":
         "© 2026 J&N Education. Tutti i diritti riservati.",
-      "Created, Written & Illustrated by Mykola Kartsev":
-        "Creato, scritto e illustrato da Mykola Kartsev",
+      "Created, Written & Illustrated by Nikolai Kartsev":
+        "Creato, scritto e illustrato da Nikolai Kartsev",
       "Edited by Jade Solomon": "Editing di Jade Solomon",
       "About Us": "Chi siamo",
       "J&N Education brings comics, English grammar, humor, and practice together — so learning feels like an adventure.":
@@ -212,8 +212,8 @@
         "Люди за историями, рисунками и образовательной частью.",
       "Creator, Writer & Illustrator": "Создатель, автор и иллюстратор",
       "Editor & Educational Contributor": "Редактор и образовательный соавтор",
-      "A software developer with a passion for storytelling, visual creativity, and learning new things. Mykola created J&N Education to explore a simple idea: what if learning English could feel more like reading a funny adventure than studying a textbook?":
-        "Разработчик ПО со страстью к storytelling, визуальному творчеству и изучению нового. Mykola создал J&N Education, чтобы проверить простую идею: а что, если учить английский будет больше похоже на чтение смешного приключения, чем на учебник?",
+      "A software developer with a passion for storytelling, visual creativity, and learning new things. Nikolai created J&N Education to explore a simple idea: what if learning English could feel more like reading a funny adventure than studying a textbook?":
+        "Разработчик ПО со страстью к storytelling, визуальному творчеству и изучению нового. Nikolai создал J&N Education, чтобы проверить простую идею: а что, если учить английский будет больше похоже на чтение смешного приключения, чем на учебник?",
       "He brings the characters, stories, illustrations, and visual world of the comics to life, combining creativity with modern digital tools.":
         "Он оживляет персонажей, истории, иллюстрации и визуальный мир комиксов, сочетая творчество с современными цифровыми инструментами.",
       "Jade helps shape the educational side of the project, bringing a language teacher's perspective to the stories, dialogues, grammar explanations, and learning activities.":
@@ -226,8 +226,8 @@
         "Смотри опубликованные выпуски и открывай подходящий по уровню.",
       "© 2026 J&N Education. All rights reserved.":
         "© 2026 J&N Education. Все права защищены.",
-      "Created, Written & Illustrated by Mykola Kartsev":
-        "Создано, написано и проиллюстрировано: Mykola Kartsev",
+      "Created, Written & Illustrated by Nikolai Kartsev":
+        "Создано, написано и проиллюстрировано: Nikolai Kartsev",
       "Edited by Jade Solomon": "Редактор: Jade Solomon",
       "About Us": "О нас",
       "J&N Education brings comics, English grammar, humor, and practice together — so learning feels like an adventure.":
@@ -385,8 +385,8 @@
         "Люди за історіями, малюнками та освітньою частиною.",
       "Creator, Writer & Illustrator": "Творець, автор і ілюстратор",
       "Editor & Educational Contributor": "Редактор і освітній співавтор",
-      "A software developer with a passion for storytelling, visual creativity, and learning new things. Mykola created J&N Education to explore a simple idea: what if learning English could feel more like reading a funny adventure than studying a textbook?":
-        "Розробник ПЗ із захопленням storytelling, візуальною творчістю та вивченням нового. Mykola створив J&N Education, щоб перевірити просту ідею: а що, якби вчити англійську було більше схоже на читання кумедної пригоди, ніж на підручник?",
+      "A software developer with a passion for storytelling, visual creativity, and learning new things. Nikolai created J&N Education to explore a simple idea: what if learning English could feel more like reading a funny adventure than studying a textbook?":
+        "Розробник ПЗ із захопленням storytelling, візуальною творчістю та вивченням нового. Nikolai створив J&N Education, щоб перевірити просту ідею: а що, якби вчити англійську було більше схоже на читання кумедної пригоди, ніж на підручник?",
       "He brings the characters, stories, illustrations, and visual world of the comics to life, combining creativity with modern digital tools.":
         "Він оживляє персонажів, історії, ілюстрації та візуальний світ коміксів, поєднуючи творчість із сучасними цифровими інструментами.",
       "Jade helps shape the educational side of the project, bringing a language teacher's perspective to the stories, dialogues, grammar explanations, and learning activities.":
@@ -399,8 +399,8 @@
         "Переглядай опубліковані випуски й відкривай той, що пасує за рівнем.",
       "© 2026 J&N Education. All rights reserved.":
         "© 2026 J&N Education. Усі права захищено.",
-      "Created, Written & Illustrated by Mykola Kartsev":
-        "Створено, написано й проілюстровано: Mykola Kartsev",
+      "Created, Written & Illustrated by Nikolai Kartsev":
+        "Створено, написано й проілюстровано: Nikolai Kartsev",
       "Edited by Jade Solomon": "Редактор: Jade Solomon",
       "About Us": "Про нас",
       "J&N Education brings comics, English grammar, humor, and practice together — so learning feels like an adventure.":

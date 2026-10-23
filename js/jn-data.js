@@ -7,7 +7,7 @@ window.jnData = {
   email: "mkdiya20@gmail.com",
   copyright: "© 2026 J&N Education. All rights reserved.",
   credits: {
-    created: "Created, Written & Illustrated by Mykola Kartsev",
+    created: "Created, Written & Illustrated by Nikolai Kartsev",
     edited: "Edited by Jade Solomon",
   },
   mission: {
@@ -44,10 +44,10 @@ window.jnData = {
   creators: [
     {
       id: "mykola",
-      name: "Mykola Kartsev",
+      name: "Nikolai Kartsev",
       role: "Creator, Writer & Illustrator",
       bio: [
-        "A software developer with a passion for storytelling, visual creativity, and learning new things. Mykola created J&N Education to explore a simple idea: what if learning English could feel more like reading a funny adventure than studying a textbook?",
+        "A software developer with a passion for storytelling, visual creativity, and learning new things. Nikolai created J&N Education to explore a simple idea: what if learning English could feel more like reading a funny adventure than studying a textbook?",
         "He brings the characters, stories, illustrations, and visual world of the comics to life, combining creativity with modern digital tools.",
       ],
     },
@@ -105,7 +105,7 @@ window.jnData = {
       grammarTopics: ["The Verb To Be"],
       pageCount: 39,
       authors: [
-        { name: "Mykola Kartsev", role: "Author & Illustrator" },
+        { name: "Nikolai Kartsev", role: "Author & Illustrator" },
         { name: "Jade Solomon", role: "Editor" },
       ],
       status: "published",

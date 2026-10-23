@@ -121,22 +121,22 @@
       en: {
         title: "About Us — J&N Education",
         description:
-          "Meet Mykola Kartsev and Jade Solomon, and learn the mission behind J&N Education comics.",
+          "Meet Nikolai Kartsev and Jade Solomon, and learn the mission behind J&N Education comics.",
       },
       it: {
         title: "Chi siamo — J&N Education",
         description:
-          "Incontra Mykola Kartsev e Jade Solomon e scopri la missione dei fumetti J&N Education.",
+          "Incontra Nikolai Kartsev e Jade Solomon e scopri la missione dei fumetti J&N Education.",
       },
       ru: {
         title: "О нас — J&N Education",
         description:
-          "Познакомьтесь с Mykola Kartsev и Jade Solomon и узнайте миссию комиксов J&N Education.",
+          "Познакомьтесь с Nikolai Kartsev и Jade Solomon и узнайте миссию комиксов J&N Education.",
       },
       uk: {
         title: "Про нас — J&N Education",
         description:
-          "Познайомтеся з Mykola Kartsev і Jade Solomon та дізнайтеся місію коміксів J&N Education.",
+          "Познайомтеся з Nikolai Kartsev і Jade Solomon та дізнайтеся місію коміксів J&N Education.",
       },
     },
     "jn-comics": {

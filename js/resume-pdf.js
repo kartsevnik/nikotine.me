@@ -727,7 +727,7 @@
 
   function fileNameForLanguage(language) {
     var code = LANG_FILE_CODE[language] || "EN";
-    return "Mykola_Kartsev_CV_" + code + ".pdf";
+    return "Nikolai_Kartsev_CV_" + code + ".pdf";
   }
 
   function setButtonState(button, state) {
