@@ -103,11 +103,11 @@ window.siteConfig = {
     },
     {
       id: "jn",
-      title: "J&N — A story that teaches!",
-      description: "An illustrated story for learning English",
-      url: "", // JN_PROJECT_URL — set when published
+      title: "J&N Education",
+      description: "Educational comics for learning English",
+      url: "jn/index.html", // JN_PROJECT_URL
       image: "assets/projects/jn.png",
-      comingSoon: true,
+      comingSoon: false,
     },
   ],
 };

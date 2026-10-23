@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Read — To Be... SMART in English — J&amp;N Education</title>
+  <meta name="description"
+    content="Read The First Bite in your browser. In-browser viewing only; downloading the original file is not offered." />
+  <meta name="theme-color" content="#0a0b0f" />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://nikotine.me/jn/comics/the-first-bite-read.html" />
+  <meta property="og:title" content="Read — To Be... SMART in English" />
+  <meta property="og:description" content="In-browser comic viewer for The First Bite." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nikotine.me/jn/comics/the-first-bite-read.html" />
+  <meta property="og:image" content="https://nikotine.me/assets/comics/covers/the-first-bite.png" />
+  <script>
+    (function () {
+      var supported = ["it", "en", "ru", "uk"];
+      var language = "";
+      try {
+        language = localStorage.getItem("siteLanguage") || "";
+      } catch (_error) {}
+      if (!supported.includes(language)) {
+        var browserLanguages = navigator.languages?.length
+          ? navigator.languages
+          : [navigator.language];
+        language =
+          browserLanguages
+            .map(function (value) { return String(value || "").toLowerCase().split("-")[0]; })
+            .find(function (value) { return supported.includes(value); }) || "en";
+      }
+      window.__initialLanguage = language;
+      document.documentElement.lang = language;
+      // No i18n-pending hide: reader must stay visible while PDF loads
+      // (avoids blank flash / Live Server "blink" perception).
+    })();
+  </script>
+  <link rel="icon" type="image/png" href="../../assets/favicon.png" />
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Manrope:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../css/jn.css" />
+</head>
+
+<body data-page="jn-reader" data-jn-root="../../" data-comic-slug="the-first-bite">
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__glow bg__glow--top"></div>
+    <div class="bg__glow bg__glow--bottom"></div>
+    <div class="bg__lines"></div>
+  </div>
+
+  <main class="jn-page jn-page--reader">
+    <nav class="jn-nav" aria-label="J&amp;N Education navigation">
+      <a class="jn-nav__brand" href="../index.html" aria-label="J&amp;N Education home">
+        <img src="../../assets/projects/jn.png" alt="" width="42" height="42" />
+        <span>J&amp;N Education</span>
+      </a>
+      <div class="jn-nav__links">
+        <a href="index.html">Comics</a>
+        <a href="../about.html">About</a>
+      </div>
+      <div class="jn-nav__actions">
+        <a class="text-link" href="../../index.html">← nikotine.me</a>
+        <div class="language-menu" data-language-menu>
+          <button
+            class="language-menu__trigger"
+            type="button"
+            aria-label="Language selector"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span data-language-current>EN</span>
+            <span class="language-menu__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="language-menu__options" role="group" aria-label="Language selector" hidden>
+            <button type="button" data-language="it" aria-label="Italiano">IT</button>
+            <button type="button" data-language="en" aria-label="English">EN</button>
+            <button type="button" data-language="ru" aria-label="Русский">RU</button>
+            <button type="button" data-language="uk" aria-label="Українська">UA</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div data-jn-reader-root></div>
+
+    <footer class="jn-footer">
+      <p data-jn-copyright>© 2026 J&amp;N Education. All rights reserved.</p>
+      <p data-jn-credit-created>Created, Written &amp; Illustrated by Mykola Kartsev</p>
+      <p data-jn-credit-edited>Edited by Jade Solomon</p>
+    </footer>
+  </main>
+
+  <script src="../../js/i18n.js"></script>
+  <script src="../../js/jn-i18n.js"></script>
+  <script src="../../js/jn-data.js"></script>
+  <script src="../../js/vendor/pdfjs/pdf.min.js"></script>
+  <script src="../../js/jn-reader.js"></script>
+</body>
+
+</html>

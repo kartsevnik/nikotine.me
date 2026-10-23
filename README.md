@@ -105,14 +105,50 @@ supServices: [
 ```js
 creativeProjects: [
   { id: "animatra", url: "", /* ANIMATRA_URL */ ... },
-  { id: "jn",       url: "", /* JN_PROJECT_URL */, comingSoon: true },
+  { id: "jn",       url: "jn/index.html", /* JN_PROJECT_URL */ ... },
 ]
 ```
 
 - Empty `url` → card is not clickable.
-- For **J&N**, set `comingSoon: false` and fill `url` when the project goes live.
+- The J&N Education section lives under `jn/` (use `jn/index.html`; `jn.html` redirects there).
 - The SUP pricing page is `sup-rental.html`.
 - Rename the Facebook group title by editing `title` on `facebook-group`.
+
+## J&N Education
+
+Permanent URLs:
+
+| Page | Path |
+|------|------|
+| Landing | `/jn/` (use `jn/index.html` from site links) |
+| About | `/jn/about.html` |
+| Comics library | `/jn/comics/` (`jn/comics/index.html`) |
+| First comic | `/jn/comics/the-first-bite.html` |
+| Reader | `/jn/comics/the-first-bite-read.html` |
+| PDF source | `/assets/comics/sources/the-first-bite.pdf` (not linked in UI) |
+| Cover | `/assets/comics/covers/the-first-bite.png` |
+
+Data and rendering:
+
+- Catalog metadata: `js/jn-data.js`
+- UI renderer: `js/jn.js`
+- In-browser reader: `js/jn-reader.js` + local `js/vendor/pdfjs/` (pdf.js **3.11.174** legacy UMD: `pdf.min.js` + `pdf.worker.min.js`)
+- Translations (it/ru/uk): `js/jn-i18n.js` (+ page metadata in `js/i18n.js`)
+- Styles: `css/jn.css`
+
+**PDF viewing:** comics open in a canvas viewer (`Read Comic`). The UI does not offer Download/Save. On a static host the PDF is still fetched by the browser (Network tab / print / DevTools can access it) — viewing is supported in-browser; saving the original file is not offered and not fully preventable. Netlify `_headers` sets `Content-Disposition: inline` for `/assets/comics/sources/*` when that host is used.
+
+**Local preview:** open the site over HTTP (`python -m http.server 8080` or `npx serve .` from the repo root). Opening HTML via Explorer (`file://`) will not load the PDF worker. Prefer that over Live Server if the page keeps reloading/flashing while the large comic PDF is watched.
+
+### Add the next comic
+
+1. Add cover: `assets/comics/covers/<slug>.png`
+2. Add PDF: `assets/comics/sources/<slug>.pdf`
+3. Append an entry to `comics[]` in `js/jn-data.js` (`status: "published"` only when the PDF is ready; use `"coming-soon"` before that; never expose `"draft"`)
+4. Copy `jn/comics/the-first-bite.html` → `jn/comics/<slug>.html` and set `data-comic-slug="<slug>"`
+5. Copy `jn/comics/the-first-bite-read.html` → `jn/comics/<slug>-read.html` and set the same `data-comic-slug`
+6. Add English description strings as keys in `js/jn-i18n.js` for `it` / `ru` / `uk`
+7. Optionally set `interactiveUrl` later for a future interactive reader (leave empty for now)
 
 ## Where to replace logos
 

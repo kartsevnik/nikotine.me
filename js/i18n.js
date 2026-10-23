@@ -95,6 +95,116 @@
           "Оренда SUP у Кастелланці: повні комплекти, безкоштовний самовивіз і супровід у вихідні.",
       },
     },
+    jn: {
+      en: {
+        title: "J&N Education — Learn English Through Comics",
+        description:
+          "Funny stories, unforgettable characters, and real English lessons. Discover J&N Education comics.",
+      },
+      it: {
+        title: "J&N Education — Impara l’inglese con i fumetti",
+        description:
+          "Storie divertenti, personaggi indimenticabili e vere lezioni di inglese. Scopri i fumetti J&N Education.",
+      },
+      ru: {
+        title: "J&N Education — Учи английский через комиксы",
+        description:
+          "Смешные истории, незабываемые герои и настоящие уроки английского. Открой комиксы J&N Education.",
+      },
+      uk: {
+        title: "J&N Education — Вивчай англійську через комікси",
+        description:
+          "Кумедні історії, незабутні герої та справжні уроки англійської. Відкрий комікси J&N Education.",
+      },
+    },
+    "jn-about": {
+      en: {
+        title: "About Us — J&N Education",
+        description:
+          "Meet Mykola Kartsev and Jade Solomon, and learn the mission behind J&N Education comics.",
+      },
+      it: {
+        title: "Chi siamo — J&N Education",
+        description:
+          "Incontra Mykola Kartsev e Jade Solomon e scopri la missione dei fumetti J&N Education.",
+      },
+      ru: {
+        title: "О нас — J&N Education",
+        description:
+          "Познакомьтесь с Mykola Kartsev и Jade Solomon и узнайте миссию комиксов J&N Education.",
+      },
+      uk: {
+        title: "Про нас — J&N Education",
+        description:
+          "Познайомтеся з Mykola Kartsev і Jade Solomon та дізнайтеся місію коміксів J&N Education.",
+      },
+    },
+    "jn-comics": {
+      en: {
+        title: "Comics Library — J&N Education",
+        description:
+          "Browse J&N Education educational comics for learning English. Free PDF issues with grammar, stories, and practice.",
+      },
+      it: {
+        title: "Biblioteca di fumetti — J&N Education",
+        description:
+          "Sfoglia i fumetti educativi J&N Education per imparare l’inglese. Numeri PDF gratuiti con grammatica, storie ed esercizi.",
+      },
+      ru: {
+        title: "Библиотека комиксов — J&N Education",
+        description:
+          "Каталог образовательных комиксов J&N Education для изучения английского. Бесплатные PDF с грамматикой, историей и практикой.",
+      },
+      uk: {
+        title: "Бібліотека коміксів — J&N Education",
+        description:
+          "Каталог освітніх коміксів J&N Education для вивчення англійської. Безкоштовні PDF з граматикою, історією та практикою.",
+      },
+    },
+    "jn-comic": {
+      en: {
+        title: "To Be... SMART in English — The First Bite — J&N Education",
+        description:
+          "The First Bite: a free beginner comic about the verb to be. Story, grammar, practice, and teacher guide in one PDF.",
+      },
+      it: {
+        title: "To Be... SMART in English — The First Bite — J&N Education",
+        description:
+          "The First Bite: un fumetto gratuito per principianti sul verbo to be. Storia, grammatica, esercizi e guida per insegnanti in un PDF.",
+      },
+      ru: {
+        title: "To Be... SMART in English — The First Bite — J&N Education",
+        description:
+          "The First Bite: бесплатный комикс для начинающих про глагол to be. История, грамматика, практика и гайд для учителя в одном PDF.",
+      },
+      uk: {
+        title: "To Be... SMART in English — The First Bite — J&N Education",
+        description:
+          "The First Bite: безкоштовний комікс для початківців про дієслово to be. Історія, граматика, практика та гід для вчителя в одному PDF.",
+      },
+    },
+    "jn-reader": {
+      en: {
+        title: "Read — To Be... SMART in English — J&N Education",
+        description:
+          "Read The First Bite in your browser. In-browser viewing only; downloading the original file is not offered.",
+      },
+      it: {
+        title: "Leggi — To Be... SMART in English — J&N Education",
+        description:
+          "Leggi The First Bite nel browser. Solo visualizzazione; il download del file originale non è offerto.",
+      },
+      ru: {
+        title: "Читать — To Be... SMART in English — J&N Education",
+        description:
+          "Читай The First Bite в браузере. Только просмотр; скачивание исходного файла не предлагается.",
+      },
+      uk: {
+        title: "Читати — To Be... SMART in English — J&N Education",
+        description:
+          "Читай The First Bite у браузері. Лише перегляд; завантаження вихідного файлу не пропонується.",
+      },
+    },
   };
 
   const translations = {
@@ -214,6 +324,10 @@
         "Storie visive, personaggi ed esperimenti creativi",
       "An illustrated story for learning English":
         "Una storia illustrata per imparare l’inglese",
+      "Educational comics for learning English":
+        "Fumetti educativi per imparare l’inglese",
+      "J&N Education": "J&N Education",
+      "J&N — A story that teaches!": "J&N — Una storia che insegna!",
       "Price and service": "Prezzi e servizi",
       "SUP rental prices and services": "Prezzi e servizi per il noleggio SUP",
       "Beaches, lakes and SUP launch points in Italy":
@@ -535,6 +649,10 @@
         "Визуальные истории, персонажи и творческие эксперименты",
       "An illustrated story for learning English":
         "Иллюстрированная история для изучения английского",
+      "Educational comics for learning English":
+        "Образовательные комиксы для изучения английского",
+      "J&N Education": "J&N Education",
+      "J&N — A story that teaches!": "J&N — История, которая учит!",
       "Price and service": "Цены и услуги",
       "SUP rental prices and services": "Цены и услуги аренды SUP",
       "Beaches, lakes and SUP launch points in Italy":
@@ -852,6 +970,10 @@
         "Візуальні історії, персонажі та творчі експерименти",
       "An illustrated story for learning English":
         "Ілюстрована історія для вивчення англійської",
+      "Educational comics for learning English":
+        "Освітні комікси для вивчення англійської",
+      "J&N Education": "J&N Education",
+      "J&N — A story that teaches!": "J&N — Історія, що навчає!",
       "Price and service": "Ціни та послуги",
       "SUP rental prices and services": "Ціни та послуги оренди SUP",
       "Beaches, lakes and SUP launch points in Italy":
