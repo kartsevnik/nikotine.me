@@ -76,6 +76,19 @@
   let visibilityObserver = null;
 
   root.innerHTML =
+    '<nav class="jn-breadcrumb" aria-label="Breadcrumb">' +
+    '<a href="../index.html">Education</a>' +
+    '<span class="jn-breadcrumb__sep" aria-hidden="true">/</span>' +
+    '<a href="index.html">Comics</a>' +
+    '<span class="jn-breadcrumb__sep" aria-hidden="true">/</span>' +
+    '<a href="' +
+    escapeHtml(comic.slug + ".html") +
+    '">' +
+    escapeHtml(comic.title) +
+    "</a>" +
+    '<span class="jn-breadcrumb__sep" aria-hidden="true">/</span>' +
+    '<span aria-current="page">Read</span>' +
+    "</nav>" +
     '<section class="jn-reader" aria-label="Comic reader">' +
     '<header class="jn-reader__header">' +
     "<div>" +
@@ -88,7 +101,7 @@
     "</div>" +
     '<a class="jn-btn jn-btn--ghost" href="' +
     escapeHtml(comic.slug + ".html") +
-    '">Back to comic</a>' +
+    '">← Back to comic</a>' +
     "</header>" +
     '<p class="jn-reader__note">In-browser viewing only. Saving the original file is not offered and cannot be fully prevented.</p>' +
     '<p class="jn-reader__status" data-jn-status>Loading comic…</p>' +

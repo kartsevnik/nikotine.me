@@ -257,6 +257,16 @@
       .join("");
 
     root.innerHTML =
+      '<nav class="jn-breadcrumb" aria-label="Breadcrumb">' +
+      '<a href="../index.html">Education</a>' +
+      '<span class="jn-breadcrumb__sep" aria-hidden="true">/</span>' +
+      '<a href="index.html">Comics</a>' +
+      '<span class="jn-breadcrumb__sep" aria-hidden="true">/</span>' +
+      '<span aria-current="page">' +
+      escapeHtml(comic.title) +
+      "</span>" +
+      "</nav>" +
+      '<p class="jn-back"><a href="index.html">← Back to Library</a></p>' +
       '<div class="jn-detail">' +
       '<div class="jn-detail__cover">' +
       '<img src="' +
